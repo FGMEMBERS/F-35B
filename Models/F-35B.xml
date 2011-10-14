@@ -1,0 +1,1505 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>F-35B.ac</path>
+
+<!-- LIVERIES -->
+	<nasal>
+		<load>
+		var livery_update = aircraft.livery_update.new("Aircraft/F-35B/Models/Liveries");
+		</load>
+		<unload>
+		livery_update.stop();
+		</unload>
+	</nasal>
+	
+	<animation>
+    <type>material</type>
+        <property-base>sim/model/livery</property-base>
+	<object-name>fuselage</object-name>
+	<object-name>elevators</object-name>
+	<object-name>tail</object-name>
+	<object-name>rudderL</object-name>
+	<object-name>rudderR</object-name>
+	<object-name>flaperonL</object-name>
+	<object-name>flaperonR</object-name>
+	<object-name>spoilerL</object-name>
+	<object-name>spoilerR</object-name>
+	<object-name>door engineL</object-name>
+	<object-name>door engineR</object-name>
+	<object-name>arch</object-name>
+	<object-name>doorFL</object-name>
+	<object-name>doorFR</object-name>
+	<object-name>fan doorU</object-name>
+	<object-name>door fanL</object-name>
+	<object-name>door fanR</object-name>
+	<object-name>door topL</object-name>
+	<object-name>door topR</object-name>
+	<object-name>doorB1L</object-name>
+	<object-name>doorB2L</object-name>
+	<object-name>thrusterL</object-name>
+	<object-name>doorB1R</object-name>
+	<object-name>doorB2R</object-name>
+	<object-name>thrusterR</object-name>
+        <texture-prop>texture</texture-prop>
+        <texture>Liveries/Default.png</texture>
+    </animation>
+
+    <animation>
+		<type>shader</type>
+		<shader>chrome</shader>
+		<texture>Aircraft/F-35B/Models/Glass.png</texture>
+		<object-name>canopy</object-name>
+	</animation>
+
+    <animation>
+		<type>shader</type>
+		<shader>chrome</shader>
+		<texture>Aircraft/F-35B/Models/Chrome.png</texture>
+		<object-name>EOTS</object-name>
+	</animation>
+
+<!-- EFFECTS -->
+
+<model>
+   <path>Aircraft/F-35B/Models/Effects/smoketrail-light.xml</path>
+    <offsets>
+     <x-m> 1.78</x-m>
+     <y-m>-2.77</y-m>
+     <z-m> 0.00</z-m>
+     <pitch-deg>90</pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F-35B/Models/Effects/smoketrail-light.xml</path>
+    <offsets>
+     <x-m> 1.78</x-m>
+     <y-m> 2.77</y-m>
+     <z-m> 0.00</z-m>
+     <pitch-deg>90</pitch-deg>
+    </offsets>
+   </model>
+ 
+<model>
+  <path>Aircraft/F-35B/Models/Effects/wingtip-vortex.xml</path>
+   <offsets>
+     <x-m> 3.23 </x-m>
+     <y-m>-5.30 </y-m>
+     <z-m> 0.32</z-m>
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/F-35B/Models/Effects/wingtip-vortex.xml</path>
+   <offsets>
+     <x-m> 3.23 </x-m>
+     <y-m> 5.30 </y-m>
+     <z-m> 0.32</z-m>
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+ 
+  <model>
+    <path>Aircraft/F-35B/Models/Effects/contrail.xml</path>
+    <offsets>
+     <x-m> 6.12</x-m>
+     <y-m> 0.00</y-m>
+     <z-m> 0.20</z-m>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/Generic/Effects/tyre-smoke-nose.xml</path>
+	<offsets>
+	<x-m> -4.16 </x-m>
+	<y-m>  0.00 </y-m>
+	<z-m> -2.00 </z-m>
+	</offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Generic/Effects/tyre-smoke-port.xml</path>
+	<offsets>
+	<x-m>  1.88 </x-m>
+	<y-m> -2.04 </y-m>
+	<z-m> -2.00 </z-m>
+	</offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Generic/Effects/tyre-smoke-port.xml</path>
+	<offsets>
+	<x-m>  1.88 </x-m>
+	<y-m>  2.04 </y-m>
+	<z-m> -2.00 </z-m>
+	</offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F-35B/Models/Effects/plume.xml</path>
+	<offsets>
+	<x-m> 0.00 </x-m>
+	<y-m> 0.00 </y-m>
+	<z-m> 0.00 </z-m>
+	</offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F-35B/Models/Effects/heat.xml</path>
+	<offsets>
+	<x-m> 0.00 </x-m>
+	<y-m> 0.00 </y-m>
+	<z-m> 0.00 </z-m>
+	</offsets>
+  </model>
+
+<!-- LIGHTS -->
+
+<model>
+<path>Aircraft/F-35B/Models/Lights/GreenLight.xml</path>
+<name>Greenlight</name>     
+<offsets>
+<x-m> 2.62 </x-m>
+<y-m> 5.41</y-m>
+<z-m> 0.37</z-m>       
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-35B/Models/Lights/RedLight.xml</path>
+<name>Redlight</name>     
+<offsets>
+<x-m> 2.62</x-m>
+<y-m>-5.41</y-m>
+<z-m> 0.37</z-m>       
+</offsets>
+</model>
+
+<!-- ANIMATIONS -->
+    
+<!-- CANOPY -->
+
+<animation>
+ <type>rotate</type>
+ <object-name>canopy</object-name>
+ <object-name>arch</object-name>
+ <property>/canopy/position-norm</property>
+ <factor>35</factor>
+ <center>
+  <x-m>-6.22</x-m>
+  <y-m> 0.0</y-m>
+  <z-m> 0.7</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<!-- FLAPERONS -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flaperonL</object-name>
+  <property>/controls/flight/aileron</property>
+  <factor>35</factor>
+  <axis>
+   <x1-m> 3.64</x1-m>
+   <y1-m>-1.75</y1-m>
+   <z1-m> 0.37</z1-m>
+   <x2-m> 2.88</x2-m>
+   <y2-m>-4.71</y2-m>
+   <z2-m> 0.38</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flaperonR</object-name>
+  <property>/controls/flight/aileron</property>
+  <factor>35</factor>
+  <axis>
+   <x1-m> 3.64</x1-m>
+   <y1-m> 1.75</y1-m>
+   <z1-m> 0.37</z1-m>
+   <x2-m> 2.88</x2-m>
+   <y2-m> 4.71</y2-m>
+   <z2-m> 0.38</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flaperonL</object-name>
+  <property>/surface-positions/flap-pos-norm</property>
+  <factor>-35</factor>
+  <axis>
+   <x1-m> 3.64</x1-m>
+   <y1-m>-1.75</y1-m>
+   <z1-m> 0.37</z1-m>
+   <x2-m> 2.88</x2-m>
+   <y2-m>-4.71</y2-m>
+   <z2-m> 0.38</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flaperonR</object-name>
+  <property>/surface-positions/flap-pos-norm</property>
+  <factor>35</factor>
+  <axis>
+   <x1-m> 3.64</x1-m>
+   <y1-m> 1.75</y1-m>
+   <z1-m> 0.37</z1-m>
+   <x2-m> 2.88</x2-m>
+   <y2-m> 4.71</y2-m>
+   <z2-m> 0.38</z2-m>
+  </axis>
+ </animation>
+
+<!-- ELEVATORS -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>elevators</object-name>
+  <property>/surface-positions/elevator-pos-norm</property>
+  <factor>35</factor>
+  <axis>
+   <x1-m> 5.97</x1-m>
+   <y1-m>-1.73</y1-m>
+   <z1-m> 0.26</z1-m>
+   <x2-m> 5.97</x2-m>
+   <y2-m> 1.73</y2-m>
+   <z2-m> 0.26</z2-m>
+  </axis>
+ </animation>
+
+<!-- SPOILERS -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>spoilerL</object-name>
+  <property>/surface-positions/elevator-pos-norm</property>
+  <factor>35</factor>
+  <axis>
+   <x1-m> 2.32</x1-m>
+   <y1-m>-5.35</y1-m>
+   <z1-m> 0.36</z1-m>
+   <x2-m> 0.32</x2-m>
+   <y2-m>-2.32</y2-m>
+   <z2-m> 0.36</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>spoilerR</object-name>
+  <property>/surface-positions/elevator-pos-norm</property>
+  <factor>-35</factor>
+  <axis>
+   <x1-m> 2.32</x1-m>
+   <y1-m> 5.35</y1-m>
+   <z1-m> 0.36</z1-m>
+   <x2-m> 0.32</x2-m>
+   <y2-m> 2.32</y2-m>
+   <z2-m> 0.36</z2-m>
+  </axis>
+ </animation>
+
+<!-- RUDDERS -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>rudderL</object-name>
+  <property>/surface-positions/rudder-pos-norm</property>
+  <factor>-35</factor>
+  <axis>
+   <x1-m> 5.19</x1-m>
+   <y1-m>-1.49</y1-m>
+   <z1-m> 0.53</z1-m>
+   <x2-m> 6.24</x2-m>
+   <y2-m>-2.15</y2-m>
+   <z2-m> 2.45</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>rudderR</object-name>
+  <property>/surface-positions/rudder-pos-norm</property>
+  <factor>-35</factor>
+  <axis>
+   <x1-m> 5.19</x1-m>
+   <y1-m> 1.49</y1-m>
+   <z1-m> 0.53</z1-m>
+   <x2-m> 6.24</x2-m>
+   <y2-m> 2.15</y2-m>
+   <z2-m> 2.45</z2-m>
+  </axis>
+ </animation>
+
+<!-- LANDING GEAR -->
+
+ <animation>
+  <type>select</type>
+  <object-name>wheel.L</object-name>
+  <object-name>gear1.L</object-name>
+  <object-name>wheel.R</object-name>
+  <object-name>gear1.R</object-name>
+  <object-name>wheel.F</object-name>
+  <object-name>gear1.F</object-name>
+  <object-name>gear2.F</object-name>
+  <object-name>gear3.F</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0.001</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+<!-- GEAR DOORS -->
+
+<!-- FRONT GEAR DOORS -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>doorFL</object-name>
+		<property>gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>-90</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m>-6.00</x1-m>
+   		<y1-m>-0.37</y1-m>
+   		<z1-m>-0.36</z1-m>
+   		<x2-m>-4.17</x2-m>
+   		<y2-m>-0.57</y2-m>
+   		<z2-m>-0.43</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>doorFR</object-name>
+		<property>gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>90</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m>-6.00</x1-m>
+   		<y1-m> 0.37</y1-m>
+   		<z1-m>-0.36</z1-m>
+   		<x2-m>-4.17</x2-m>
+   		<y2-m> 0.57</y2-m>
+   		<z2-m>-0.43</z2-m>
+  		</axis>
+	</animation>
+
+<!-- LEFT GEAR DOORS -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>doorB2L</object-name>
+		<property>gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>-70</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>-70</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m> 1.42</x1-m>
+   		<y1-m>-2.41</y1-m>
+   		<z1-m> 0.15</z1-m>
+   		<x2-m> 1.94</x2-m>
+   		<y2-m>-2.42</y2-m>
+   		<z2-m> 0.15</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>doorB1L</object-name>
+		<property>gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m> 0.75</x1-m>
+   		<y1-m>-2.39</y1-m>
+   		<z1-m> 0.21</z1-m>
+   		<x2-m>-0.06</x2-m>
+   		<y2-m>-2.10</y2-m>
+   		<z2-m> 0.21</z2-m>
+  		</axis>
+	</animation>
+
+<!-- RIGHT GEAR DOORS -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>doorB2R</object-name>
+		<property>gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>70</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>70</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m> 1.42</x1-m>
+   		<y1-m> 2.41</y1-m>
+   		<z1-m> 0.15</z1-m>
+   		<x2-m> 1.94</x2-m>
+   		<y2-m> 2.42</y2-m>
+   		<z2-m> 0.15</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>doorB1R</object-name>
+		<property>gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m> 0.75</x1-m>
+   		<y1-m> 2.39</y1-m>
+   		<z1-m> 0.21</z1-m>
+   		<x2-m>-0.06</x2-m>
+   		<y2-m> 2.10</y2-m>
+   		<z2-m> 0.21</z2-m>
+  		</axis>
+	</animation>
+
+<!-- FRONT GEAR -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.F</object-name>
+		<object-name>gear.F</object-name>	
+		<object-name>gear1.F</object-name>
+		<object-name>gear2.F</object-name>
+		<object-name>gear3.F</object-name>
+		<property>gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>100</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>100</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>-4.58 </x-m>
+			<y-m> 0.00 </y-m>
+			<z-m>-0.28 </z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!-- LEFT GEAR -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.L</object-name>
+		<object-name>gear1.L</object-name>	 
+		<property>gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m> 2.089</x-m>
+			<y-m>-1.838</y-m>
+			<z-m> 0.107</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.L</object-name>	 
+		<property>gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m> 2.089</x-m>
+			<y-m>-1.838</y-m>
+			<z-m> 0.107</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+<!-- RIGHT GEAR -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.R</object-name>
+		<object-name>gear1.R</object-name>		 
+		<property>gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>2.089</x-m>
+			<y-m>1.838</y-m>
+			<z-m>0.107</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.R</object-name> 
+		<property>gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>2.089</x-m>
+			<y-m>1.838</y-m>
+			<z-m>0.107</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+<!-- STEERING -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.F</object-name>
+		<object-name>gear1.F</object-name>
+		<object-name>gear3.F</object-name>	 	
+		<property>gear/gear[0]/caster-angle-deg[0]</property>
+		<factor>-1</factor>
+		<offset-deg>0</offset-deg>
+		<axis>
+		 <x1-m>-4.579</x1-m>
+		 <y1-m> 0.000</y1-m>
+		 <z1-m> 0.477</z1-m>
+		 <x2-m>-4.579</x2-m>
+		 <y2-m> 0.000</y2-m>
+		 <z2-m> 0.577</z2-m>
+		</axis>
+	</animation>
+	
+<!-- GEAR COMPRESSION -->
+
+	<animation>
+		<type>translate</type>
+		<object-name>wheel.F</object-name>
+		<object-name>gear1.F</object-name>
+		<object-name>gear3.F</object-name>	  
+		<property>gear/gear/compression-m</property>
+		<factor>1</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>	
+
+	<animation>
+		<type>translate</type>
+		<object-name>wheel.L</object-name>
+		<property>gear/gear[1]/compression-m</property>
+		<factor>1</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>wheel.R</object-name>	
+		<property>gear/gear[2]/compression-m</property>
+		<factor>1</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+<!-- ENGINES -->
+
+<!-- FAN -->
+
+	<animation>
+		<type>spin</type>
+		<object-name>fan</object-name>
+		<property>engines/engine[0]/n2</property>
+		<factor>20</factor>
+		<center>
+			<x-m>-2.945</x-m>
+			<y-m> 0.0000</y-m>
+			<z-m> 0.8600</z-m>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
+	</animation>
+
+<!-- FAN DOORS -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>door fan</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>80</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>80</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m>-2.13</x1-m>
+   		<y1-m>-0.66</y1-m>
+   		<z1-m> 1.28</z1-m>
+   		<x2-m>-2.13</x2-m>
+   		<y2-m> 0.66</y2-m>
+   		<z2-m> 1.28</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>door fanL</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>100</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>100</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m>-1.86</x1-m>
+   		<y1-m>-0.57</y1-m>
+   		<z1-m>-0.64</z1-m>
+   		<x2-m>-2.73</x2-m>
+   		<y2-m>-0.54</y2-m>
+   		<z2-m>-0.52</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>door fanR</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-100</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>-100</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m>-1.86</x1-m>
+   		<y1-m> 0.57</y1-m>
+   		<z1-m>-0.64</z1-m>
+   		<x2-m>-2.73</x2-m>
+   		<y2-m> 0.54</y2-m>
+   		<z2-m>-0.52</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>door topL</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>95</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>95</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m>-1.28</x1-m>
+   		<y1-m>-0.53</y1-m>
+   		<z1-m> 1.22</z1-m>
+   		<x2-m>-0.15</x2-m>
+   		<y2-m>-0.54</y2-m>
+   		<z2-m> 1.16</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>door topR</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-95</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>-95</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m>-1.28</x1-m>
+   		<y1-m> 0.53</y1-m>
+   		<z1-m> 1.22</z1-m>
+   		<x2-m>-0.15</x2-m>
+   		<y2-m> 0.54</y2-m>
+   		<z2-m> 1.16</z2-m>
+  		</axis>
+	</animation>
+
+<!-- ENGINE DOORS -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>door engineL</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m> 5.30</x1-m>
+   		<y1-m>-0.67</y1-m>
+   		<z1-m>-0.11</z1-m>
+   		<x2-m> 3.74</x2-m>
+   		<y2-m>-0.75</y2-m>
+   		<z2-m>-0.36</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>door engineR</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m> 5.30</x1-m>
+   		<y1-m> 0.67</y1-m>
+   		<z1-m>-0.11</z1-m>
+   		<x2-m> 3.74</x2-m>
+   		<y2-m> 0.75</y2-m>
+   		<z2-m>-0.36</z2-m>
+  		</axis>
+	</animation>
+
+<!-- THRUSTERS -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>thrusterL</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m> 1.63</x1-m>
+   		<y1-m>-3.03</y1-m>
+   		<z1-m> 0.22</z1-m>
+   		<x2-m> 2.08</x2-m>
+   		<y2-m>-3.03</y2-m>
+   		<z2-m> 0.22</z2-m>
+  		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>thrusterR</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+  		<axis>
+   		<x1-m> 1.63</x1-m>
+   		<y1-m> 3.03</y1-m>
+   		<z1-m> 0.22</z1-m>
+   		<x2-m> 2.08</x2-m>
+   		<y2-m> 3.03</y2-m>
+   		<z2-m> 0.22</z2-m>
+  		</axis>
+	</animation>
+
+<!-- PETALS -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.016</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-1.987</y-m>
+			<z-m>-0.902</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0.283</y>
+			<z>0.238</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.015</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-2.095</y-m>
+			<z-m>-1.200</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0.126</y>
+			<z>0.317</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.014</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-2.040</y-m>
+			<z-m>-1.513</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-0.064</y>
+			<z>0.364</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.013</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-1.835</y-m>
+			<z-m>-1.758</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-0.238</y>
+			<z>0.284</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.009</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-1.537</y-m>
+			<z-m>-1.866</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-0.347</y>
+			<z>0.126</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.023</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-1.223</y-m>
+			<z-m>-1.811</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-0.364</y>
+			<z>-0.064</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.022</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-0.979</y-m>
+			<z-m>-1.606</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-0.284</y>
+			<z>-0.238</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.021</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-0.871</y-m>
+			<z-m>-1.308</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-0.126</y>
+			<z>-0.347</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.020</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-0.926</y-m>
+			<z-m>-0.994</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0.064</y>
+			<z>-0.365</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.019</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-1.131</y-m>
+			<z-m>-0.750</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0.238</y>
+			<z>-0.283</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.018</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-1.429</y-m>
+			<z-m>-0.642</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0.347</y>
+			<z>-0.126</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>NozzlePetal.017</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<factor>-10.0</factor>
+		<center>
+			<x-m>7.754</x-m>
+			<y-m>-1.743</y-m>
+			<z-m>-0.697</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0.365</y>
+			<z>0.064</z>
+		</axis>
+	</animation>
+
+<!-- NOZZLE -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>InNozzleL</object-name>
+		<object-name>InNozzleLOpen</object-name>
+		<object-name>ReheatL</object-name>
+		<object-name>NozzlePlug</object-name>
+		<object-name>NozzlePetal.001</object-name>	 
+		<object-name>NozzlePetal.002</object-name>
+		<object-name>NozzlePetal.003</object-name>
+		<object-name>NozzlePetal.004</object-name>
+		<object-name>NozzlePetal.005</object-name>
+		<object-name>NozzlePetal.006</object-name>
+		<object-name>NozzlePetal.007</object-name>
+		<object-name>NozzlePetal.008</object-name>
+		<object-name>NozzlePetal.009</object-name>
+		<object-name>NozzlePetal.010</object-name>
+		<object-name>NozzlePetal.011</object-name>
+		<object-name>NozzlePetal.012</object-name>
+		<object-name>NozzlePetal.013</object-name>
+		<object-name>NozzlePetal.014</object-name>
+		<object-name>NozzlePetal.015</object-name>
+		<object-name>NozzlePetal.016</object-name>
+		<object-name>NozzlePetal.017</object-name>
+		<object-name>NozzlePetal.018</object-name>
+		<object-name>NozzlePetal.019</object-name>
+		<object-name>NozzlePetal.020</object-name>
+		<object-name>NozzlePetal.021</object-name>
+		<object-name>NozzlePetal.022</object-name>
+		<object-name>NozzlePetal.023</object-name>
+		<object-name>NozzlePetal.024</object-name>
+		<object-name>NozzlePetal.025</object-name>
+		<object-name>NozzlePetal.026</object-name>
+		<object-name>NozzlePetal.027</object-name>
+		<object-name>NozzlePetal.028</object-name>
+		<object-name>NozzlePetal.029</object-name>
+		<property>/controls/engines/engine/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>95</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+    			</entry>
+		</interpolation>
+		<center>
+			<x-m>4.5</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>InNozzleL</object-name>
+		<object-name>InNozzleLOpen</object-name>
+		<object-name>ReheatL</object-name>
+		<object-name>NozzlePlug</object-name>
+		<object-name>NozzlePetal.001</object-name>	 
+		<object-name>NozzlePetal.002</object-name>
+		<object-name>NozzlePetal.003</object-name>
+		<object-name>NozzlePetal.004</object-name>
+		<object-name>NozzlePetal.005</object-name>
+		<object-name>NozzlePetal.006</object-name>
+		<object-name>NozzlePetal.007</object-name>
+		<object-name>NozzlePetal.008</object-name>
+		<object-name>NozzlePetal.009</object-name>
+		<object-name>NozzlePetal.010</object-name>
+		<object-name>NozzlePetal.011</object-name>
+		<object-name>NozzlePetal.012</object-name>
+		<object-name>NozzlePetal.013</object-name>
+		<object-name>NozzlePetal.014</object-name>
+		<object-name>NozzlePetal.015</object-name>
+		<object-name>NozzlePetal.016</object-name>
+		<object-name>NozzlePetal.017</object-name>
+		<object-name>NozzlePetal.018</object-name>
+		<object-name>NozzlePetal.019</object-name>
+		<object-name>NozzlePetal.020</object-name>
+		<object-name>NozzlePetal.021</object-name>
+		<object-name>NozzlePetal.022</object-name>
+		<object-name>NozzlePetal.023</object-name>
+		<object-name>NozzlePetal.024</object-name>
+		<object-name>NozzlePetal.025</object-name>
+		<object-name>NozzlePetal.026</object-name>
+		<object-name>NozzlePetal.027</object-name>
+		<object-name>NozzlePetal.028</object-name>
+		<object-name>NozzlePetal.029</object-name>
+		<property>/controls/flight/aileron</property>
+		<interpolation>
+			<entry>
+				<ind>-1.0</ind>
+				<dep>-13</dep>
+			</entry>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>13</dep>
+    			</entry>
+		</interpolation>
+		<center>
+			<x-m>4.5</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+<!-- INNER NOZZLE -->
+
+	<animation>
+		<type>select</type>
+		<object-name>InNozzleL</object-name>
+		<condition>
+			<less-than-equals>
+				<property>engines/engine[0]/nozzle-pos-norm</property>
+				<value>0.5</value>
+			</less-than-equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>InNozzleLOpen</object-name>
+		<condition>
+			<greater-than>
+				<property>engines/engine[0]/nozzle-pos-norm</property>
+				<value>0.5</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>InNozzleL</object-name>
+		<property>gear/gear[0]/position-norm</property>
+		<factor>0.0</factor>
+		<offset-m>-8.313</offset-m>
+		<axis>
+			<x>-9.395</x>
+			<y>1.724</y>
+			<z>1.457</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>scale</type>
+		<object-name>InNozzleL</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<x-factor>0.0</x-factor>
+		<x-offset>1.0</x-offset>
+		<y-factor>0.2</y-factor>
+		<y-offset>1.0</y-offset>
+		<z-factor>0.2</z-factor>
+		<z-offset>1.0</z-offset>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>InNozzleL</object-name>
+		<factor>0.0</factor>
+		<offset-m>8.313</offset-m>
+		<axis>
+			<x>-9.395</x>
+			<y>1.724</y>
+			<z>1.457</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>InNozzleLOpen</object-name>
+		<factor>0.0</factor>
+		<offset-m>-8.313</offset-m>
+		<axis>
+			<x>-9.395</x>
+			<y>1.724</y>
+			<z>1.457</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>scale</type>
+		<object-name>InNozzleLOpen</object-name>
+		<property>engines/engine[0]/nozzle-pos-norm</property>
+		<x-factor>0.0</x-factor>
+		<x-offset>1.0</x-offset>
+		<y-factor>0.3</y-factor>
+		<y-offset>0.85</y-offset>
+		<z-factor>0.3</z-factor>
+		<z-offset>0.85</z-offset>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>InNozzleLOpen</object-name>
+		<factor>0.0</factor>
+		<offset-m>8.313</offset-m>
+		<axis>
+			<x>-9.395</x>
+			<y>1.724</y>
+			<z>1.457</z>
+		</axis>
+	</animation>
+
+</PropertyList>
