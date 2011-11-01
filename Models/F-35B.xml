@@ -205,8 +205,8 @@
  <animation>
   <type>rotate</type>
   <object-name>flaperonL</object-name>
-  <property>/controls/flight/aileron</property>
-  <factor>35</factor>
+  <property>/surface-positions/aileron-pos-norm</property>
+  <factor>-35</factor>
   <axis>
    <x1-m> 3.64</x1-m>
    <y1-m>-1.75</y1-m>
@@ -220,8 +220,8 @@
  <animation>
   <type>rotate</type>
   <object-name>flaperonR</object-name>
-  <property>/controls/flight/aileron</property>
-  <factor>35</factor>
+  <property>/surface-positions/aileron-pos-norm</property>
+  <factor>-35</factor>
   <axis>
    <x1-m> 3.64</x1-m>
    <y1-m> 1.75</y1-m>
@@ -284,8 +284,8 @@
  <animation>
   <type>rotate</type>
   <object-name>spoilerL</object-name>
-  <property>/surface-positions/elevator-pos-norm</property>
-  <factor>35</factor>
+  <property>/surface-positions/slat-pos-norm</property>
+  <factor>-35</factor>
   <axis>
    <x1-m> 2.32</x1-m>
    <y1-m>-5.35</y1-m>
@@ -299,8 +299,8 @@
  <animation>
   <type>rotate</type>
   <object-name>spoilerR</object-name>
-  <property>/surface-positions/elevator-pos-norm</property>
-  <factor>-35</factor>
+  <property>/surface-positions/slat-pos-norm</property>
+  <factor>35</factor>
   <axis>
    <x1-m> 2.32</x1-m>
    <y1-m> 5.35</y1-m>
@@ -333,6 +333,36 @@
   <object-name>rudderR</object-name>
   <property>/surface-positions/rudder-pos-norm</property>
   <factor>-35</factor>
+  <axis>
+   <x1-m> 5.19</x1-m>
+   <y1-m> 1.49</y1-m>
+   <z1-m> 0.53</z1-m>
+   <x2-m> 6.24</x2-m>
+   <y2-m> 2.15</y2-m>
+   <z2-m> 2.45</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>rudderL</object-name>
+  <property>/surface-positions/speedbrake-pos-norm</property>
+  <factor>-55</factor>
+  <axis>
+   <x1-m> 5.19</x1-m>
+   <y1-m>-1.49</y1-m>
+   <z1-m> 0.53</z1-m>
+   <x2-m> 6.24</x2-m>
+   <y2-m>-2.15</y2-m>
+   <z2-m> 2.45</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>rudderR</object-name>
+  <property>/surface-positions/speedbrake-pos-norm</property>
+  <factor>55</factor>
   <axis>
    <x1-m> 5.19</x1-m>
    <y1-m> 1.49</y1-m>
@@ -406,7 +436,7 @@
 			</entry>
 			<entry>
 				<ind>0.7</ind>
-				<dep>-90</dep>
+				<dep>90</dep>
 			</entry>
 			<entry>
 				<ind>1.0</ind>
@@ -803,6 +833,20 @@
 <!-- FAN -->
 
 	<animation>
+		<type>select</type>
+		<object-name>fan</object-name>
+		  <condition>
+		  <not>
+		   <greater-than>
+		    <property>/controls/engines/engine/mixture</property>
+		    <value>0.99</value>
+		   </greater-than>
+		   </not>
+		  </condition>
+	</animation>
+
+
+	<animation>
 		<type>spin</type>
 		<object-name>fan</object-name>
 		<property>engines/engine[0]/n2</property>
@@ -1078,7 +1122,7 @@
 	</animation>
 
 <!-- PETALS -->
-
+<!--
 	<animation>
 		<type>rotate</type>
 		<object-name>NozzlePetal.016</object-name>
@@ -1282,7 +1326,7 @@
 			<z>0.064</z>
 		</axis>
 	</animation>
-
+-->
 <!-- NOZZLE -->
 
 	<animation>
@@ -1325,6 +1369,10 @@
 			<entry>
 				<ind>0.0</ind>
 				<dep>95</dep>
+			</entry>
+			<entry>
+				<ind>0.5</ind>
+				<dep>0</dep>
 			</entry>
 			<entry>
 				<ind>1.0</ind>
@@ -1378,11 +1426,11 @@
 		<object-name>NozzlePetal.027</object-name>
 		<object-name>NozzlePetal.028</object-name>
 		<object-name>NozzlePetal.029</object-name>
-		<property>/controls/flight/aileron</property>
+		<property>/surface-positions/nozzle-yaw</property>
 		<interpolation>
 			<entry>
 				<ind>-1.0</ind>
-				<dep>-13</dep>
+				<dep>13</dep>
 			</entry>
 			<entry>
 				<ind>0.0</ind>
@@ -1390,7 +1438,7 @@
 			</entry>
 			<entry>
 				<ind>1.0</ind>
-				<dep>13</dep>
+				<dep>-13</dep>
     			</entry>
 		</interpolation>
 		<center>
@@ -1406,7 +1454,7 @@
 	</animation>
 
 <!-- INNER NOZZLE -->
-
+<!--
 	<animation>
 		<type>select</type>
 		<object-name>InNozzleL</object-name>
@@ -1428,7 +1476,7 @@
 			</greater-than>
 		</condition>
 	</animation>
-
+-->
 	<animation>
 		<type>translate</type>
 		<object-name>InNozzleL</object-name>
@@ -1441,7 +1489,7 @@
 			<z>1.457</z>
 		</axis>
 	</animation>
-
+<!--
 	<animation>
 		<type>scale</type>
 		<object-name>InNozzleL</object-name>
@@ -1453,7 +1501,7 @@
 		<z-factor>0.2</z-factor>
 		<z-offset>1.0</z-offset>
 	</animation>
-
+-->
 	<animation>
 		<type>translate</type>
 		<object-name>InNozzleL</object-name>
@@ -1477,7 +1525,7 @@
 			<z>1.457</z>
 		</axis>
 	</animation>
-
+<!--
 	<animation>
 		<type>scale</type>
 		<object-name>InNozzleLOpen</object-name>
@@ -1489,7 +1537,7 @@
 		<z-factor>0.3</z-factor>
 		<z-offset>0.85</z-offset>
 	</animation>
-
+-->
 	<animation>
 		<type>translate</type>
 		<object-name>InNozzleLOpen</object-name>

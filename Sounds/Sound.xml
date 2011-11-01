@@ -240,16 +240,6 @@
    </pitch>
   </squeal>
 
-    <air-brakes>
-      <name>air-brakes</name>
-      <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
-      <property>surface-positions/speedbrake-pos-norm</property>
-      <volume>
-        <factor>0.25</factor>
-      </volume>
-    </air-brakes>
-
    <mixture>
       <name>thrust</name>
       <mode>in-transit</mode>
@@ -261,18 +251,6 @@
         <factor>-0.04</factor>
       </pitch>
     </mixture>
-
-   <canopy>
-      <name>gear</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/canopy/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.04</factor>
-      </pitch>
-    </canopy>
   
    <gear>
       <name>gear</name>

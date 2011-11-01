@@ -4,13 +4,13 @@
  
  <submodel>
     <name>Tracer</name> 
-    <model>Models/Geometry/tracer.xml</model>
+    <model>Aircraft/F-35B/Models/Effects/tracer.xml</model>
     <trigger>controls/armament/trigger</trigger>
     <speed>2500</speed>
     <repeat>true</repeat>
     <delay>0.15</delay>
     <count>-1</count>
-    <x-offset>-21.0 </x-offset>
+    <x-offset> 21.0 </x-offset>
     <y-offset> 1.50 </y-offset>
     <z-offset> 0.53 </z-offset>
     <pitch-offset> 0.5 </pitch-offset>
@@ -23,13 +23,13 @@
 
    <submodel>
     <name>Round</name>
-    <model>Models/Geometry/null.ac</model>
+    <model>Aircraft/F-35B/Models/Effects/null.ac</model>
     <trigger>controls/armament/trigger</trigger>
     <speed>2041</speed>
     <repeat>true</repeat>
     <delay>0.1</delay>
     <count>-1</count>
-    <x-offset>-21.0</x-offset>
+    <x-offset> 21.0</x-offset>
     <y-offset> 1.50 </y-offset>
     <z-offset> 0.53 </z-offset>
     <pitch-offset> 0.5 </pitch-offset>
