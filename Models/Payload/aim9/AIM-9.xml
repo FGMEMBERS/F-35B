@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!--
+Weight 188 pounds (85.3 kg) 
+Length 9 feet 11 inches (3.02 m) 
+Diameter 5 in (127.0 mm) 
+
+Launch
+platform Aircraft, helicopter gunships 
+
+-->
+
+	<path>AIM-9.ac</path>
+	
+	<animation>
+		<type>select</type>
+		<object-name>AIM9</object-name>
+		
+	</animation>
+	
+	<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>12000</max-m>
+    </animation>
+	
+</PropertyList>

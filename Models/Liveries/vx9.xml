@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+	<model>
+		<livery>
+			<name type="string">Fantasy VX9 "Vampires"</name>
+			<pylons type="bool">false</pylons>
+			<texture>liveries/VX9.png</texture>
+		</livery>
+	</model>
+</sim>
+
+</PropertyList>

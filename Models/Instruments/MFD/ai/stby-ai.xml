@@ -1,0 +1,33 @@
+<PropertyList>
+	
+	<path>stby-ai.ac</path>
+
+	<animation>
+		<type>texmultiple</type>
+		<object-name>StbyAIface</object-name>
+		<transform>
+			<property>orientation/pitch-deg</property>
+			<subtype>textranslate</subtype>
+			<factor>0.00305</factor>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+		</transform>
+		<transform>
+			<property>orientation/roll-deg</property>
+			<subtype>texrotate</subtype>
+			<center>
+				<x>0.25</x>
+				<y>0.50</y>
+			</center>
+			<axis>
+				<x>0</x>
+				<y>0</y>
+				<z>-1</z>
+			</axis>
+		</transform>
+	</animation>
+
+</PropertyList>

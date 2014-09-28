@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>Gear.ac</path>
+	
+<!-- Landing Gear -->
+
+	<animation>
+		<type>select</type>
+		<object-name>wheel.F</object-name>
+		<object-name>gear1.F</object-name>
+		<object-name>gear2.F</object-name>
+		<object-name>gear3.F</object-name>
+		<object-name>wheel.L</object-name>
+		<object-name>gear1.L</object-name>
+		<object-name>gear2.L</object-name>
+		<object-name>gear3.L</object-name>
+		<object-name>gear4.L</object-name>
+		<object-name>wheel.R</object-name>
+		<object-name>gear1.R</object-name>
+		<object-name>gear2.R</object-name>
+		<object-name>gear3.R</object-name>
+		<object-name>gear4.R</object-name>
+		<condition>
+			<greater-than>
+				<property>gear/gear[0]/position-norm</property>
+				<value>0.001</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+<!-- Front Gear -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.F</object-name>
+		<object-name>gear1.F</object-name>
+		<object-name>gear2.F</object-name>
+		<object-name>gear3.F</object-name>
+		<property>gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>100</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>100</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>-3.74 </x-m>
+			<y-m> 0.00 </y-m>
+			<z-m> 0.07 </z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>gear2.F</object-name>
+		<property>gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>110</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>110</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>110</offset-deg>
+		<axis>   
+			<x1-m>-3.80</x1-m>
+			<y1-m> 1.00</y1-m>
+			<z1-m>-0.72</z1-m>
+			<x2-m>-3.80</x2-m>
+			<y2-m>-1.00</y2-m>
+			<z2-m>-0.72</z2-m>
+		</axis>
+	</animation>
+
+<!-- Left Gear -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.L</object-name>
+		<object-name>gear1.L</object-name>
+		<object-name>gear2.L</object-name>
+		<object-name>gear3.L</object-name>
+		<object-name>gear4.L</object-name>	 
+		<property>gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m> 1.97</x-m>
+			<y-m>-1.85</y-m>
+			<z-m> 0.15</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.L</object-name>
+		<object-name>gear1.L</object-name>
+		<object-name>gear3.L</object-name>
+		<object-name>gear4.L</object-name>
+		<property>gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m> 1.97</x-m>
+			<y-m>-1.85</y-m>
+			<z-m> 0.15</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>gear2.L</object-name>
+		<property>gear/gear[1]/position-norm</property>
+		<factor>150</factor>
+		<offset-deg>-150</offset-deg>
+		<axis>   
+			<x1-m> 1.81</x1-m>
+			<y1-m>-1.88</y1-m>
+			<z1-m>-0.49</z1-m>
+			<x2-m> 1.81</x2-m>
+			<y2-m> 1.88</y2-m>
+			<z2-m>-0.49</z2-m>
+		</axis>
+	</animation>
+
+<!-- Right Gear -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.R</object-name>
+		<object-name>gear1.R</object-name>
+		<object-name>gear2.R</object-name>
+		<object-name>gear3.R</object-name>
+		<object-name>gear4.R</object-name>	 
+		<property>gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>-90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m> 1.97</x-m>
+			<y-m> 1.85</y-m>
+			<z-m> 0.15</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.R</object-name>
+		<object-name>gear1.R</object-name>
+		<object-name>gear3.R</object-name>
+		<object-name>gear4.R</object-name>
+		<property>gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>0.1</ind>
+				<dep>90</dep>
+			</entry>
+			<entry>
+				<ind>0.9</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m> 1.97</x-m>
+			<y-m> 1.85</y-m>
+			<z-m> 0.15</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>gear2.R</object-name>
+		<property>gear/gear[1]/position-norm</property>
+		<factor>150</factor>
+		<offset-deg>-150</offset-deg>
+		<axis>   
+			<x1-m> 1.81</x1-m>
+			<y1-m>-1.88</y1-m>
+			<z1-m>-0.49</z1-m>
+			<x2-m> 1.81</x2-m>
+			<y2-m> 1.88</y2-m>
+			<z2-m>-0.49</z2-m>
+		</axis>
+	</animation>
+
+<!-- Steering -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wheel.F</object-name>
+		<object-name>gear1.F</object-name>	 	
+		<property>gear/gear[0]/caster-angle-deg[0]</property>
+		<factor>-1</factor>
+		<offset-deg>0</offset-deg>
+		<axis>
+		 <x1-m>-3.74</x1-m>
+		 <y1-m> 0.00</y1-m>
+		 <z1-m>-0.44</z1-m>
+		 <x2-m>-3.74</x2-m>
+		 <y2-m> 0.00</y2-m>
+		 <z2-m>-1.70</z2-m>
+		</axis>
+	</animation>
+	
+<!-- Gear Compression -->
+
+	<animation>
+		<type>translate</type>
+		<object-name>wheel.F</object-name>
+		<object-name>gear1.F</object-name>  
+		<property>gear/gear/compression-m</property>
+		<factor>1</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>	
+
+	<animation>
+		<type>translate</type>
+		<object-name>wheel.L</object-name>
+		<object-name>gear1.L</object-name>
+		<object-name>gear3.L</object-name> 
+		<property>gear/gear[1]/compression-m</property>
+		<factor>1</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>wheel.R</object-name>
+		<object-name>gear1.R</object-name>
+		<object-name>gear3.R</object-name> 
+		<property>gear/gear[2]/compression-m</property>
+		<factor>1</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+</PropertyList>

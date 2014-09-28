@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<!-- Effects -->
+
+	<model>
+		<name>flame</name>
+		<path>Aircraft/F-35B/Models/Effects/flame.xml</path>
+	
+		<offsets>
+			<x-m> 0</x-m>
+			<y-m>0</y-m>
+			<z-m> 0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+		<condition>
+			<equals>
+				<property>controls/armament/trigger</property>
+				<value type="bool">true</value>
+			</equals>
+		</condition>
+	</model>
+
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/smoketrail-light.xml</path>
+		<offsets>
+			<x-m> 2.18</x-m>
+			<y-m>-2.72</y-m>
+			<z-m> 0.46</z-m>
+			<pitch-deg>90</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/smoketrail-light.xml</path>
+		<offsets>
+			<x-m> 1.78</x-m>
+			<y-m> 2.72</y-m>
+			<z-m> 0.46</z-m>
+			<pitch-deg>90</pitch-deg>
+		</offsets>
+	</model>
+ 
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/wingtip-vortex.xml</path>
+		<offsets>
+			<x-m> 3.85 </x-m>
+			<y-m>-5.41 </y-m>
+			<z-m> 0.41</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/wingtip-vortex.xml</path>
+		<offsets>
+			<x-m> 3.85 </x-m>
+			<y-m> 5.41 </y-m>
+			<z-m> 0.41</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+ 
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/contrail.xml</path>
+		<offsets>
+			<x-m> 6.12</x-m>
+			<y-m> 0.00</y-m>
+			<z-m> 0.20</z-m>
+		</offsets>
+	</model>
+ 
+	<model>
+		<path>Aircraft/Generic/Effects/tyre-smoke-nose.xml</path>
+		<offsets>
+			<x-m> -3.74 </x-m>
+			<y-m>  0.00 </y-m>
+			<z-m>  0.17 </z-m>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/Generic/Effects/tyre-smoke-port.xml</path>
+		<offsets>
+			<x-m>  1.45 </x-m>
+			<y-m> -2.04 </y-m>
+			<z-m>  2.16 </z-m>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/Generic/Effects/tyre-smoke-port.xml</path>
+		<offsets>
+			<x-m>  1.45 </x-m>
+			<y-m>  2.04 </y-m>
+			<z-m>  2.16 </z-m>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/heat.xml</path>
+		<offsets>
+			<x-m> 0.00 </x-m>
+			<y-m> 0.00 </y-m>
+			<z-m> 0.00 </z-m>
+		</offsets>
+	</model>
+	
+	<!-- Engine fire -->
+	
+	<model>
+		<name>fire</name>
+		<path>Aircraft/F-35B/Models/Effects/Engine/Fire.xml</path>
+		<condition>
+			<equals>
+				<property>sim/crashed</property>
+				<value type="bool">true</value>
+			</equals>
+		</condition>
+		<offsets>
+			<x-m>1.05</x-m>
+			<y-m>0.00</y-m>
+			<z-m>1.75</z-m>
+			<heading-deg>0</heading-deg>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	
+	<!-- Aircraft wash modeled in the lines below -->
+ 
+	<model>
+		<name>aircraft_wash_l</name>
+		<path>Aircraft/F-35B/Models/Effects/Wash/aircraft_wash.xml</path>
+		<condition>
+			<equals>
+				<property>controls/state/low_level</property>
+				<value>1</value>
+			</equals>
+		</condition>
+		<offsets>
+			<x-m>25.000</x-m>
+			<y-m>0</y-m>
+			<z-m>0.0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+ 
+	<animation>
+		<type>translate</type>
+		<object-name>aircraft_wash_l</object-name>
+	 
+		<property>position/altitude-agl-ft</property>
+		<condition>
+			<equals>
+				<property>controls/state/low_level</property>
+				<value>1</value>
+			</equals>
+		</condition>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0.0</dep>
+			</entry>
+			<entry>
+				<ind>300.0</ind>
+				<dep>-90</dep>
+			</entry>
+		</interpolation>
+	 
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>1.0</z>
+		</axis>
+	 
+	</animation>
+ 
+	<!-- High Alpha vapour -->
+ 
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/Vapour/Vapour.xml</path>
+		<offsets>
+			<x-m>-2.0</x-m>
+			<y-m>-1.0</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>-25</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/Vapour/Vapour.xml</path>
+		<offsets>
+			<x-m>-2.0</x-m>
+			<y-m>1.0</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>25</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/Vapour/Vapour2.xml</path>
+		<offsets>
+			<x-m>1.0</x-m>
+			<y-m>-2</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>45</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Effects/Vapour/Vapour2.xml</path>
+		<offsets>
+			<x-m>1.0</x-m>
+			<y-m>2</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>-45</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<name>sonicboom</name>
+		<path>Aircraft/F-35B/Models/Effects/boom/fx.xml</path>
+		<offsets>
+			<x-m>1</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	
+</PropertyList>

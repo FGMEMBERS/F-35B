@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <submodel>
+    <name>Impact smoke</name>
+    <model>Aircraft/F-35B/Models/Effects/flack.xml</model>
+    <!--<trigger>ai/submodels/trigger</trigger>-->
+    <speed>0</speed>
+    <repeat>true</repeat>
+		<delay>0.3</delay>
+    <count>-1</count>
+    <x-offset>  1000 </x-offset>
+    <y-offset>  1.50 </y-offset>
+    <z-offset>  0.53 </z-offset>
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset>0</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>35</buoyancy>
+    <life>1.0</life>
+  </submodel> 
+
+</PropertyList>

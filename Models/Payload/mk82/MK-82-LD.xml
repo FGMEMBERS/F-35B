@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+
+
+<PropertyList>
+
+	<path>MK-82-LD.ac</path>
+	<animation>
+    <object-name>MK-82</object-name>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+	
+</PropertyList>
