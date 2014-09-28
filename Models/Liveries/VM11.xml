@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+	<model>
+		<livery>
+			<name type="string">VM-11 (Marine Corps)</name>
+			<pylons type="bool">false</pylons>
+			<texture>liveries/VM11.png</texture>
+		</livery>
+	</model>
+</sim>
+
+</PropertyList>

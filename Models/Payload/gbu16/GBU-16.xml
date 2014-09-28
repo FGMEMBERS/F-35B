@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>GBU-16.ac</path>
+	
+	<animation>
+		<type>select</type>
+		<object-name>GBU16</object-name>
+		
+	</animation>
+	
+	<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>12000</max-m>
+    </animation>
+	
+</PropertyList>

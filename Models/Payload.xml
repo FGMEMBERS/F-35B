@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Payload/pylons.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+
+	<!--Station1 -->
+	
+	<model>
+		<name>left-AIM9-pos-1</name>
+		<path>Aircraft/F-35B/Models/Payload/aim9/AIM-9.xml</path>
+		<offsets>
+			<x-m>2.5</x-m>
+			<y-m>-4.95</y-m>
+			<z-m>0.08</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-AIM9-pos-1</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[0]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[0]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+	
+	<!-- Station2 -->
+ 
+	<model>
+		<name>left-AGM65-pos-1</name>
+		<path>Aircraft/F-35B/Models/Payload/2xAGM-65.xml</path>
+		<offsets>
+			<x-m>2.15</x-m>
+			<y-m>-4.27</y-m>
+			<z-m>-0.1</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-AGM65-pos-1</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[1]/selected</property>
+					<value>2xAGM-65</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[1]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>  
+
+	<model>
+		<name>left-mk82-pos-1</name>
+		<path>Aircraft/F-35B/Models/Payload/2xMK-82.xml</path>
+		<offsets>
+			<x-m>2.15</x-m>
+			<y-m>-4.27</y-m>
+			<z-m>-0.1</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-mk82-pos-1</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[1]/selected</property>
+					<value>2xMK-82</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[1]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>  
+
+	<!-- Station3 -->
+
+	<model>
+		<name>left-droptank</name>
+		<path>Aircraft/F-35B/Models/Payload/Tank/Tank.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m>-3.25</y-m>
+			<z-m>-0.3</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-droptank</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[2]/selected</property>
+					<value>370_Gal_Tank</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[2]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>  
+
+	<model>
+		<name>left-agm154</name>
+		<path>Aircraft/F-35B/Models/Payload/agm154/agm154.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m>-3.25</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-agm154</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[2]/selected</property>
+					<value>AGM-154</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[2]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<model>
+		<name>left-GBU10</name>
+		<path>Aircraft/F-35B/Models/Payload/gbu10/gbu10.xml</path>
+		<offsets>
+			<x-m>1.6</x-m>
+			<y-m>-3.25</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-GBU10</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[2]/selected</property>
+					<value>GBU-10</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[2]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>left-GBU24</name>
+		<path>Aircraft/F-35B/Models/Payload/gbu24/gbu24.xml</path>
+		<offsets>
+			<x-m>1.4</x-m>
+			<y-m>-3.25</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-GBU24</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[2]/selected</property>
+					<value>GBU-24</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[2]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<!-- Station4 - left internal -->
+
+	<model>
+		<name>left-internal1</name>
+		<path>Aircraft/F-35B/Models/Payload/aim120/AIM-120.xml</path>
+		<offsets>
+			<x-m> 0.05</x-m>
+			<y-m>-0.5</y-m>
+			<z-m>-0.57</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-internal1</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[3]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[3]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>left-internal2</name>
+		<path>Aircraft/F-35B/Models/Payload/aim9/AIM-9.xml</path>
+		<offsets>
+			<x-m> 0.05</x-m>
+			<y-m>-0.5</y-m>
+			<z-m>-0.57</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-internal2</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[3]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[3]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>left-internal3</name>
+		<path>Aircraft/F-35B/Models/Payload/aim120+mk82L.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-internal3</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[3]/selected</property>
+					<value>AIM-120 + MK-82</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[3]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>left-internal4</name>
+		<path>Aircraft/F-35B/Models/Payload/aim120+gbu12L.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-internal4</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[3]/selected</property>
+					<value>AIM-120 + GBU-12</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[3]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>left-internal5</name>
+		<path>Aircraft/F-35B/Models/Payload/aim120+gbu16L.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>left-internal5</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[3]/selected</property>
+					<value>AIM-120 + GBU-16</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[3]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<!--Station5 - right internal -->
+
+	<model>
+		<name>right-internal1</name>
+		<path>Aircraft/F-35B/Models/Payload/aim120/AIM-120.xml</path>
+		<offsets>
+			<x-m> 0.05</x-m>
+			<y-m>0.5</y-m>
+			<z-m>-0.57</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-internal1</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[4]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[4]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>right-internal2</name>
+		<path>Aircraft/F-35B/Models/Payload/aim9/AIM-9.xml</path>
+		<offsets>
+			<x-m> 0.05</x-m>
+			<y-m>0.5</y-m>
+			<z-m>-0.57</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-internal2</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[4]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[4]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>right-internal3</name>
+		<path>Aircraft/F-35B/Models/Payload/aim120+mk82R.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-internal3</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[4]/selected</property>
+					<value>AIM-120 + MK-82</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[4]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>right-internal4</name>
+		<path>Aircraft/F-35B/Models/Payload/aim120+gbu12R.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-internal4</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[4]/selected</property>
+					<value>AIM-120 + GBU-12</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[4]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<model>
+		<name>right-internal5</name>
+		<path>Aircraft/F-35B/Models/Payload/aim120+gbu16R.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-internal5</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[4]/selected</property>
+					<value>AIM-120 + GBU-16</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[4]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<!--Station6 -->
+
+	<model>
+		<name>right-droptank</name>
+		<path>Aircraft/F-35B/Models/Payload/Tank/Tank.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m>3.25</y-m>
+			<z-m>-0.3</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-droptank</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[5]/selected</property>
+					<value>370_Gal_Tank</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[5]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>  
+
+	<model>
+		<name>right-agm154</name>
+		<path>Aircraft/F-35B/Models/Payload/agm154/agm154.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m>3.25</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-agm154</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[5]/selected</property>
+					<value>AGM-154</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[5]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<model>
+		<name>right-GBU10</name>
+		<path>Aircraft/F-35B/Models/Payload/gbu10/gbu10.xml</path>
+		<offsets>
+			<x-m>1.6</x-m>
+			<y-m>3.25</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-GBU10</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[5]/selected</property>
+					<value>GBU-10</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[5]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<model>
+		<name>right-GBU24</name>
+		<path>Aircraft/F-35B/Models/Payload/gbu24/gbu24.xml</path>
+		<offsets>
+			<x-m>1.4</x-m>
+			<y-m>3.25</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-GBU24</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[5]/selected</property>
+					<value>GBU-24</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[5]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<!--Station7 -->
+
+	<model>
+		<name>right-AGM65-pos-1</name>
+		<path>Aircraft/F-35B/Models/Payload/2xAGM-65.xml</path>
+		<offsets>
+			<x-m>2.15</x-m>
+			<y-m>4.27</y-m>
+			<z-m>-0.1</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-AGM65-pos-1</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[6]/selected</property>
+					<value>2xAGM-65</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[6]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>  
+
+	<model>
+		<name>right-mk82-pos-1</name>
+		<path>Aircraft/F-35B/Models/Payload/2xMK-82.xml</path>
+		<offsets>
+			<x-m>2.15</x-m>
+			<y-m>4.27</y-m>
+			<z-m>-0.1</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-mk82-pos-1</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[6]/selected</property>
+					<value>2xMK-82</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[6]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>  
+
+	<!--Station8 -->
+  	
+	<model>
+		<name>right-AIM9-pos-1</name>
+		<path>Aircraft/F-35B/Models/Payload/aim9/AIM-9.xml</path>
+		<offsets>
+			<x-m>2.5</x-m>
+			<y-m>4.95</y-m>
+			<z-m>0.08</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+  
+	<animation>
+		<type>select</type>
+		<object-name>right-AIM9-pos-1</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>sim/weight[7]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[7]/release</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+</PropertyList>

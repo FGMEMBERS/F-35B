@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+	<model>
+		<livery>
+			<name type="string">External pylons</name>
+			<pylons type="bool">true</pylons>
+			<texture>liveries/Default.png</texture>
+		</livery>
+	</model>
+</sim>
+
+</PropertyList>

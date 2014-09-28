@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+	<model>
+		<livery>
+			<name type="string">AF-01</name>
+			<pylons type="bool">false</pylons>
+			<texture>liveries/Default.png</texture>
+		</livery>
+	</model>
+</sim>
+
+</PropertyList>

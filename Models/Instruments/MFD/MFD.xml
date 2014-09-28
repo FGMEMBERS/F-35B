@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  
+	<model>
+		<path>Aircraft/F-35B/Models/Instruments/MFD/ai/stby-ai.xml</path>
+		<offsets>
+			<x-m>-5.5745 </x-m>
+			<y-m>0.118 </y-m>
+			<z-m>0.666 </z-m>
+			<pitch-deg>-17</pitch-deg>
+		</offsets>
+	</model>
+  
+	<model>
+		<path>Aircraft/F-35B/Models/Instruments/MFD/asi/stby-asi.xml</path>
+		<offsets>
+			<x-m>-5.5745 </x-m>
+			<y-m>0.038 </y-m>
+			<z-m>0.666 </z-m>
+			<pitch-deg>-17</pitch-deg>
+		</offsets>
+	</model>
+  
+	<model>
+		<path>Aircraft/F-35B/Models/Instruments/MFD/alt/stby-alt.xml</path>
+		<offsets>
+			<x-m>-5.5745 </x-m>
+			<y-m>-0.13 </y-m>
+			<z-m>0.666 </z-m>
+			<pitch-deg>-17</pitch-deg>
+		</offsets>
+	</model>
+  
+  
+	<model>
+		<path>Aircraft/F-35B/Models/Instruments/MFD/radar/radar.xml</path>
+		<offsets>
+			<x-m>-5.61 </x-m>
+			<y-m>0.243 </y-m>
+			<z-m>0.772 </z-m>
+			<pitch-deg>-17</pitch-deg>
+			<pitch-offset>0</pitch-offset>
+		</offsets>
+	</model>
+  
+	<model>
+		<path>Aircraft/F-35B/Models/Instruments/MFD/radar/radar2.xml</path>
+		<offsets>
+			<x-m>-5.626 </x-m>
+			<y-m>0.0853 </y-m>
+			<z-m>0.768 </z-m>
+			<pitch-deg>-17</pitch-deg>
+			<pitch-offset>0</pitch-offset>
+		</offsets>
+	</model>
+  
+	<model>
+		<path>Aircraft/F-35B/Models/Instruments/MFD/res/terrain-map-pixel.xml</path>
+		<offsets>
+			<x-m>-5.605 </x-m>
+			<y-m>-0.09 </y-m>
+			<z-m>0.772 </z-m>
+			<pitch-deg>-17</pitch-deg>
+			<pitch-offset>0</pitch-offset>
+		</offsets>
+	</model>
+
+</PropertyList>

@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<fx>
+
+<!-- External Sounds -->
+ 
+ <!-- Engines-->
+ 
+  <engine>
+   <name>Intake Fans</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-35B/Sounds/Samples/engine-intake.wav</path>
+   <condition>
+     <not>
+          <property>/sim/current-view/internal</property>
+	  <property>/engines/engine/out-of-fuel</property>
+     </not>
+   </condition>
+   <position>
+    	<x>5.5</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>-90.0</x>
+    	<y>0</y>
+    	<z>0</z>
+    	<inner-angle>110.0</inner-angle>
+    	<outer-angle>180.0</outer-angle>
+    	<outer-gain>0.4</outer-gain>
+   </orientation>
+   <volume>
+    	<property>engines/engine[0]/n2</property>
+    	<factor>0.08</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </volume>
+   <pitch>
+    	<property>engines/engine/n2</property>
+	<factor>0.05</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </pitch>
+    <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+  </engine>
+  
+  <engine>
+   <name>APU Exhaust</name>
+   <mode>looped</mode>
+  <path>Aircraft/F-35B/Sounds/Samples/wing-vents.wav</path>
+   <condition>
+    <property>/engines/engine/running</property>
+     	<not>
+          <property>/sim/current-view/internal</property>
+	  <property>/engines/engine/out-of-fuel</property>
+     	</not>
+   </condition>
+   <position>
+    	<x>2.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>90.0</x>
+    	<y>0.0</y>
+    	<z>0.0</z>
+    	<inner-angle>80.0</inner-angle>
+    	<outer-angle>110.0</outer-angle>
+    	<outer-gain>0.6</outer-gain>
+   </orientation>
+   <volume>
+    	<property>engines/engine[2]/n2</property>
+    	<factor>0.03</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </volume>
+   <pitch>
+    	<property>engines/engine[2]/n2</property>
+	<factor>0.2</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </pitch>
+    <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+  </engine>
+  
+  <engine>
+   <name>Engine Exhaust</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-35B/Sounds/Samples/engine-exhaust.wav</path>
+   <condition>
+    	<property>/engines/engine/running</property>
+    	 <not>
+         	<property>/sim/current-view/internal</property>
+	 	<property>/engines/engine/out-of-fuel</property>
+     	</not>
+   </condition>
+   <position>
+    	<x>6.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>90.0</x>
+    	<y>0.0</y>
+    	<z>0.0</z>
+    	<inner-angle>80.0</inner-angle>
+   	<outer-angle>110.0</outer-angle>
+   	<outer-gain>0.5</outer-gain>
+   </orientation>
+   <volume>
+        <property>engines/engine/n2</property>
+        <factor>0.08</factor>
+        <min>0.4</min>
+	<max>1.0</max>
+   </volume>
+   <pitch>
+    	<property>engines/engine/n2</property>
+	<factor>0.005</factor>
+	<min>0</min>
+	<max>0.7</max>
+   </pitch>
+    <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+  </engine>
+  
+  <engine>
+   <name>Engine Thrust LowFreq</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-35B/Sounds/Samples/engine-lowfreq.wav</path>
+   <condition>
+    	<property>/engines/engine/running</property>
+     	<not>
+        	<property>/sim/current-view/internal</property>
+		<property>/engines/engine/out-of-fuel</property>
+     	</not>
+   </condition>
+   <position>
+    	<x>10.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>90.0</x>
+    	<y>0.0</y>
+    	<z>0.0</z>
+    	<inner-angle>0.0</inner-angle>
+    	<outer-angle>160.0</outer-angle>
+    	<outer-gain>0.5</outer-gain>
+   </orientation>
+   <volume>
+    	<property>engines/engine/thrust-lbs</property>
+    	<factor>0.0001</factor>
+    	<offset>0.25</offset>
+	<min>0.0</min>
+	<max>1.0</max>
+   </volume>
+    <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+  </engine>
+  
+  <!-- Afterburner -->
+  
+  <engine>
+   <name>Reheat</name>
+   <mode>looped</mode>
+    <path>Aircraft/F-35B/Sounds/Samples/reheat.wav</path>
+   <condition>
+	 <property>engines/engine/afterburner</property>
+    	   <not>
+		<property>/sim/current-view/internal</property>
+		<property>/engines/engine/out-of-fuel</property>
+     	   </not>
+   </condition>
+   <position>
+    	<x>6.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>90.0</x>
+    	<y>0.0</y>
+    	<z>0.0</z>
+    	<inner-angle>60.0</inner-angle>
+    	<outer-angle>160.0</outer-angle>
+    	<outer-gain>0.75</outer-gain>
+   </orientation>
+   <volume>
+        <offset>1</offset>
+	<min>0.3</min>
+	<max>1.0</max>
+   </volume>
+    <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+  </engine>
+
+   
+
+    <!-- Sonic Boom -->
+  <sonicboom>
+   <name>Sonic Boom</name>
+	<mode>once</mode>
+   <path>Aircraft/F-35B/Sounds/sonicboom.wav</path>
+   <condition>
+   <and>
+	    <greater-than>
+	     	<property>/velocities/mach</property>
+	     	<value>1.0</value>
+	    </greater-than>
+	    <equals>
+		    <property>/sim/current-view/internal</property>
+		    <value>false</value>
+		</equals>
+	</and>
+   </condition>
+    <reference-dist>600.0</reference-dist>
+    <max-dist>6000.0</max-dist>
+  </sonicboom>
+
+
+ <!-- flyby -->
+		<flyby>
+			<name>fly-by</name>
+			<mode>once</mode>
+			<path>Aircraft/F-35B/Sounds/flyby.wav</path>
+			<condition>
+			<and>
+	    <greater-than>
+	     	<property>/velocities/mach</property>
+	     	<value>0.6</value>
+	    </greater-than>
+				<equals>
+					<property>sim/current-view/view-number</property>
+					<value>6</value>
+				</equals>
+				</and>
+				<not>
+         	<property>/sim/current-view/internal</property>
+	 	<property>/engines/engine/out-of-fuel</property>
+     	</not>
+		</condition>
+			<volume>
+				<property>velocities/airspeed-kt</property>
+				<factor>0.001</factor>
+			</volume>
+			
+		</flyby>
+
+
+<guns>
+      <name>gunfire</name>
+      <mode>looped</mode>
+      <path>Aircraft/F-35B/Sounds/gunfire.wav</path>
+      <condition> 
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel/count</property>
+      </condition>
+      <volume> 
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+	  <reference-dist>600.0</reference-dist>
+    <max-dist>1000.0</max-dist>
+	  
+    </guns>
+</fx>
+</PropertyList>

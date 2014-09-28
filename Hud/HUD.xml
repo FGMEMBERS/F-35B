@@ -1,0 +1,602 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+
+
+    <enable3d>false</enable3d>
+    
+   
+
+    <ladder>
+        <name>Pitch Ladder</name>
+        <type>pitch</type>
+        <x>-35</x>
+        <y>-20</y>
+        <width>60</width>
+        <height>20</height>
+        <roll-input>
+            <property>/orientation/roll-deg</property>
+        </roll-input>
+        <pitch-input>
+            <property>/orientation/pitch-deg</property>
+        </pitch-input>
+        <compression-factor>7.8</compression-factor>
+        <display-span>10.0</display-span>
+        <divisions>5.0</divisions>
+        <screen-hole>10</screen-hole>
+        <zero-bar-overlength>30</zero-bar-overlength>
+        <enable-dive-bar-angle>true</enable-dive-bar-angle>
+        <enable-dynamic-origin>false</enable-dynamic-origin>
+        <enable-fuselage-ref-line>true</enable-fuselage-ref-line>
+        <enable-target-spot>true</enable-target-spot>
+		<enable-target-markers>true</enable-target-markers>
+        <enable-velocity-vector>true</enable-velocity-vector>
+        <enable-drift-marker>true</enable-drift-marker>
+        <enable-alpha-bracket>true</enable-alpha-bracket>
+        <enable-energy-marker>true</enable-energy-marker>
+        <enable-climb-dive-marker>true</enable-climb-dive-marker>
+        <enable-glide-slope-marker>false</enable-glide-slope-marker>
+        <glide-slope>0.0</glide-slope>
+        <enable-energy-worm>true</enable-energy-worm>
+        <enable-waypoint-marker>false</enable-waypoint-marker>
+    </ladder>
+
+    <tape>
+        <name>Altitude-MSL</name>
+        <x>37</x>
+        <y>-40</y>
+        <width>10</width>
+        <height>50</height>
+        <input>
+            <property>/position/altitude-ft</property>
+            <factor>0.001</factor>
+            <max>100</max>
+            <min>-100</min>
+        </input>
+        <major-divisions>1</major-divisions>
+        <minor-divisions>0.1</minor-divisions>
+        <display-span>2.0</display-span>
+        <option>right</option>
+        <option>vertical</option>
+        <tick-bottom>false</tick-bottom>
+        <tick-top>false</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>false</cap-right>
+        <cap-left>false</cap-left>
+        <marker-offset>5</marker-offset>
+        <enable-pointer>true</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+    </tape>
+
+    <tape>
+        <name>KIAS</name>
+        <x>-50</x>
+        <y>-40</y>
+        <width>10</width>
+        <height>50</height>
+        <input>
+            <property>/velocities/airspeed-kt</property>
+            <factor>0.1</factor>
+            <max>85</max>
+            <min>0</min>
+        </input>
+        <major-divisions>1</major-divisions>
+        <minor-divisions>0.1</minor-divisions>
+        <display-span>2.0</display-span>
+        <option>left</option>
+        <option>vertical</option>
+        <tick-bottom>false</tick-bottom>
+        <tick-top>false</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>false</cap-right>
+        <cap-left>false</cap-left>
+        <marker-offset>5</marker-offset>
+        <enable-pointer>true</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+    </tape>
+
+
+    <tape>
+        <name>Gyrocompass</name>
+        <x>-55</x>
+        <y>-120</y>
+        <width>100</width>
+        <height>20</height>
+        <input>
+            <property>orientation/heading-deg</property>
+            <factor>0.1</factor>
+            <max>85</max>
+            <min>0</min>
+        </input>
+        <display-span>3</display-span>
+        <option>bottom</option>
+        <major-divisions>1</major-divisions>
+        <minor-divisions>0.1</minor-divisions>
+        <tick-bottom>false</tick-bottom>
+        <tick-top>false</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>true</cap-right>
+        <cap-left>true</cap-left>
+        <marker-offset>0</marker-offset>
+        <enable-pointer>false</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+        <tick-type>line</tick-type>
+        <tick-length>fixed</tick-length>
+    </tape>
+
+    <label>
+        <name>Gyro Heading Marker</name>
+        <x>-5</x>
+        <y>-94</y>
+        <width>1</width>
+        <height>1</height>
+        <format>v</format>
+    </label>
+
+    <label>
+        <name>Gyro Heading Label</name>
+        <x>-15</x>
+        <y>-90</y>
+        <width>18</width>
+        <height>8</height>
+        <input>
+            <property>/orientation/heading-deg</property>
+        </input>
+        <format>%4.0f</format>
+        <halign>center</halign>
+        <box>true</box>
+    </label>
+
+    <label>
+        <name>KIAS</name>
+        <x>-82</x>
+        <y>-20</y>
+        <width>25</width>
+        <height>10</height>
+        <input>
+            <property>/velocities/airspeed-kt</property>
+        </input>
+        <format>%4.0f</format>
+        <halign>left</halign>
+        <box>true</box>
+        <option>right</option>
+    </label>
+
+    <label>
+        <name>Altitude</name>
+        <x>55</x>
+        <y>-20</y>
+        <width>24</width>
+        <height>10</height>
+        <input>
+            <property>/position/altitude-ft</property>
+        </input>
+        <format>%4.0f</format>
+        <halign>right</halign>
+        <box>true</box>
+        <option>left</option>
+    </label>
+
+
+    <label>
+        <name>MACH Number</name>
+        <x>-65</x>
+        <y>60</y>
+       <width>2</width>
+        <height>2</height>
+        <input>
+            <property>/velocities/mach</property>
+        </input>
+        <format>M%4.1f</format>
+        <halign>left</halign>
+    </label>
+	
+	 <label>
+	 <name>Ground Speed</name>
+		<width>2</width>
+		<height>2</height>
+		<x>-65</x>
+        <y>50</y>
+		<format>GS:%3dkts</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/indicated-ground-speed-kt</property>
+		</input>
+	</label>
+	
+	 <label>
+        <name>G Load</name>
+        <x>45</x>
+        <y>60</y>
+        <width>2</width>
+        <height>2</height>
+        <input>
+            <property>/accelerations/pilot/z-accel-fps_sec</property>
+            <factor>-0.03108095</factor>
+            <damp>1.0</damp>
+        </input>
+        <format>G%2.1f</format>
+        <halign>left</halign>
+    </label>
+	
+	<label>
+	<name>AGL</name>
+	<x>45</x>
+	<y>47</y>
+	<width>24</width>
+	<height>10</height>
+	<input>
+	<property>/position/altitude-agl-ft</property>
+	</input>
+	<format>AGL%4.0f</format>
+	<halign>right</halign>
+	<box>false</box>
+	<option>left</option>
+	</label>
+
+
+<aiming-reticle>
+  <x>-5</x>
+  <y>-5</y>
+  <width>10</width>
+  <height>10</height>
+ </aiming-reticle>
+ 
+ <!-- waypoints 
+ 
+ <label>
+		<width>2</width>
+		<height>2</height>
+		<x>25</x>
+        <y>-190</y>
+		<format>%4.1f :WYPT1</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[1]/distance-nm</property>
+		</input>
+	</label>
+	
+
+	
+ <label>
+		<width>2</width>
+		<height>2</height>
+		<x>25</x>
+        <y>-208</y>
+		<format>%4.1f :WYPT2</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[2]/distance-nm</property>
+		</input>
+	</label>
+
+<label>
+		<width>2</width>
+		<height>2</height>
+		<x>25</x>
+        <y>-226</y>
+		<format>%4.1f :WYPT3</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[3]/distance-nm</property>
+		</input>
+	</label>
+
+<label>
+		<width>2</width>
+		<height>2</height>
+		<x>25</x>
+        <y>-244</y>
+		<format>%4.1f :WYPT4</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[4]/distance-nm</property>
+		</input>
+	</label>
+
+<label>
+		<width>2</width>
+		<height>2</height>
+		<x>25</x>
+        <y>-262</y>
+		<format>%4.1f :WYPT5</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[5]/distance-nm</property>
+		</input>
+	</label>
+
+<label>
+		<width>2</width>
+		<height>2</height>
+		<x>25</x>
+        <y>-280</y>
+		<format>%4.1f :WYPT6</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[6]/distance-nm</property>
+		</input>
+	</label>	
+-->
+ 
+ <!-- Autopilot -->
+ <!-- heading 
+
+    <label>
+	<x>185</x>
+   <y>-206</y> 
+		<width>60</width>
+		<height>10</height>
+		<box>false</box>
+		<format>ROLL LOOCKED</format>
+		<halign>left</halign>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/heading</property>
+				<value>wing-leveler</value>
+			</equals>
+		</condition>
+	</label>
+    
+
+	<label>
+	<x>185</x>
+   <y>-206</y> 
+		<width>60</width>
+		<height>10</height>
+		<box>false</box>
+		<format>HDG %03d</format>
+		<halign>left</halign>
+		<input>
+			<property>/autopilot/settings/heading-bug-deg</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/heading</property>
+				<value>dg-heading-hold</value>
+			</equals>
+		</condition>
+	</label>
+
+	<label>
+	<x>185</x>
+   <y>-206</y> 
+		<width>60</width>
+		<height>10</height>
+		<box>false</box>
+		<format>HDG %03d</format>
+		<halign>left</halign>
+		<input>
+			<property>/autopilot/settings/true-heading-deg</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/heading</property>
+				<value>true-heading-hold</value>
+			</equals>
+		</condition>
+	</label>
+
+-->
+	<!-- altitude 
+
+	<label>
+	<x>185</x>
+   <y>-216</y> 
+		<x>60</x>
+		<width>60</width>
+		<height>10</height>
+		<box>false</box>
+		<format>ALT %04d</format>
+		<halign>left</halign>
+		<input>
+			<property>/autopilot/settings/target-altitude-ft</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/altitude</property>
+				<value>altitude-hold</value>
+			</equals>
+		</condition>
+	</label>
+
+    <label>
+	<x>185</x>
+   <y>-216</y>
+		<x>60</x>
+		<width>60</width>
+		<height>10</height>
+		<box>false</box>
+		<format>PTCH</format>
+		<halign>left</halign>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/altitude</property>
+				<value>pitch-hold</value>
+			</equals>
+		</condition>
+	</label>
+    
+
+    <label>
+	<x>185</x>
+   <y>-216</y> 
+		<x>60</x>
+		<width>60</width>
+		<height>10</height>
+		<box>false</box>
+		<format>V/S %d</format>
+		<halign>left</halign>
+		<input>
+			<property>/autopilot/settings/vertical-speed-fpm</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/altitude</property>
+				<value>vertical-speed-hold</value>
+			</equals>
+		</condition>
+	</label>
+
+	<label>
+	<x>185</x>
+   <y>-216</y> 
+		<x>60</x>
+		<width>60</width>
+		<height>10</height>
+		<format>AGL %04d</format>
+		<halign>left</halign>
+		<box>false</box>
+		<input>
+			<property>/autopilot/settings/target-agl-ft</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/altitude</property>
+				<value>agl-hold</value>
+			</equals>
+		</condition>
+	</label>
+-->
+    <!-- speed
+    <label>
+	<x>185</x>
+   <y>-226</y>
+		<x>120</x>
+		<width>60</width>
+		<height>10</height>
+		<format>IAS %3dkt</format>
+		<halign>left</halign>
+		<box>false</box>
+		<input>
+			<property>/autopilot/settings/target-speed-kt</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/speed</property>
+				<value>speed-with-throttle</value>
+			</equals>
+		</condition>
+	</label>
+	
+	<label>
+	<x>185</x>
+   <y>-226</y>
+		<x>120</x>
+		<width>60</width>
+		<height>10</height>
+		<format>MACH %1.2f</format>
+		<halign>left</halign>
+		<box>false</box>
+		<input>
+			<property>/autopilot/settings/target-speed-mach</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/speed</property>
+				<value>mach-with-throttle</value>
+			</equals>
+		</condition>
+	</label>
+	
+	<label>
+	<x>185</x>
+   <y>-226</y>
+		<x>120</x>
+		<width>60</width>
+		<height>10</height>
+		<format>PITCH %3dkt</format>
+		<halign>left</halign>
+		<box>false</box>
+		<input>
+			<property>/autopilot/settings/target-speed-mach</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/speed</property>
+				<value>speed-with-pitch-trim</value>
+			</equals>
+		</condition>
+	</label>
+	
+	<label>
+		<x>185</x>
+        <y>-226</y>
+		<x>120</x>
+		<width>60</width>
+		<height>10</height>
+		<format>MACH %1.2f</format>
+		<halign>left</halign>
+		<box>false</box>
+		<input>
+			<property>/autopilot/settings/target-speed-mach</property>
+		</input>
+		<condition>
+			<equals>
+				<property>/autopilot/locks/speed</property>
+				<value>mach-with-throttle</value>
+			</equals>
+		</condition>
+	</label>
+	-->
+	<!-- Lat/long
+	
+	<label>
+	    <x>209</x>
+        <y>-294</y>
+		<name>Latitude</name>
+		<width>1</width>
+		<height>1</height>
+
+		<halign>center</halign>
+		<input>
+			<property>/position/latitude-string</property>
+		</input>
+	</label>
+	
+	<label>
+	    <x>265</x>
+        <y>-294</y>
+		<name>Longitude</name>
+		<width>1</width>
+		<height>1</height>
+
+		<halign>center</halign>
+		<input>
+			<property>/position/longitude-string</property>
+		</input>
+	</label>
+	-->
+	<!-- radio
+	<label>
+  <name>COM</name>
+  <x>-85</x>
+  <y>-230</y>
+  <width>25</width>
+  <height>80</height>
+  <x>60</x>
+  <y>-140</y>
+  <halign>right</halign>
+  <format>%2.2f</format>
+  <box>false</box>
+  <option>right</option>
+  <pointer-width>10</pointer-width>
+  <pointer-length>5</pointer-length>
+  <input>
+<property>/instrumentation/comm/frequencies/selected-mhz</property>
+          </input>
+</label>
+-->
+	
+	
+	</PropertyList>

@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>Cockpit.ac</path>
+	
+	<!-- Pilot -->
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Pilot.xml</path>
+		<offsets>
+			<x-m>-5.20</x-m>
+			<y-m> 0.00</y-m>
+			<z-m> 0.68</z-m>
+		</offsets>
+		<condition>
+			<not>
+				<property>/sim/current-view/internal</property>
+			</not>
+		</condition>
+	</model>
+	
+	<!-- Instruments -->
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Instruments/MFD/MFD.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-offset>0</pitch-offset>
+		</offsets>
+	</model>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>stick</object-name>
+		<property>controls/flight/elevator</property>
+		<factor>9</factor>
+		<center>
+			<x-m>-5.10</x-m>
+			<y-m> 0.46</y-m>
+			<z-m> 0.40</z-m>
+		</center>
+		<axis>
+			<x> 0</x>
+			<y>-1</y>
+			<z> 0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>stick</object-name>
+		<property>controls/flight/aileron</property>
+		<factor>9</factor>
+		<center>
+			<x-m>-5.10</x-m>
+			<y-m> 0.46</y-m>
+			<z-m> 0.40</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y> 0</y>
+			<z> 0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>throttle</object-name>
+		<property>controls/engines/engine[1]/throttle</property>
+		<factor>-55</factor>
+		<center>
+			<x-m>-5.03</x-m>
+			<y-m>-0.43</y-m>
+			<z-m> 0.40</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>handle</object-name>
+		<property>controls/gear/gear-down</property>
+		<factor>60</factor>
+		<offset-deg>-30</offset-deg>
+		<center>
+			<x-m>-5.44</x-m>
+			<y-m>-0.43</y-m>
+			<z-m> 0.63</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>pedal left</object-name>
+		<property>controls/flight/rudder</property>
+		<factor>0.07</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>pedal right</object-name>
+		<property>controls/flight/rudder</property>
+		<factor>0.07</factor>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+</PropertyList>
