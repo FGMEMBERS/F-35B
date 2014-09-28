@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ########################################
+
+ # DR400-jsbSim by PAF team
+ # April 2012 : Modified by PAF team
+ # http://equipe-flightgear.forumactif.com
+
+##########################################-->
+
+<PropertyList>
+
+  <path>lights.ac</path>
+
+  <animation>
+    <object-name>knob</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>knob</object-name>
+    <property>controls/lighting/instruments-norm[2]</property>
+    <factor> -270 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>knob</object-name>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/instruments-norm[2]</property>
+        <step>0.05</step>
+        <min>0</min>
+        <max>1</max>
+      </binding>
+    </action>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/instruments-norm[2]</property>
+        <step>-0.05</step>
+        <min>0</min>
+        <max>1</max>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

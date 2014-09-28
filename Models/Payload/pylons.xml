@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>pylons.ac</path>
+ <animation>
+    <object-name>Station1</object-name>
+    <object-name>Station2</object-name>
+    <object-name>Station3</object-name>
+    <object-name>Station6</object-name>
+    <object-name>Station7</object-name>
+	<object-name>Station8</object-name>
+  </animation>
+
+<!--station left 1 -->
+  <animation>
+    <type>select</type>
+    <object-name>Station1</object-name>      
+    <condition>
+      <not-equals>
+        <property>sim/weight[0]/selected</property>
+        <value>none</value>
+      </not-equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Station2</object-name>      
+    <condition>
+      <not-equals>
+        <property>sim/weight[1]/selected</property>
+        <value>none</value>
+      </not-equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Station3</object-name>      
+    <condition>
+      <not-equals>
+        <property>sim/weight[2]/selected</property>
+        <value>none</value>
+      </not-equals>
+    </condition>
+  </animation>
+
+  
+
+  <animation>
+    <type>select</type>
+    <object-name>Station6</object-name>      
+    <condition>
+      <not-equals>
+        <property>sim/weight[5]/selected</property>
+        <value>none</value>
+      </not-equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Station7</object-name>      
+    <condition>
+      <not-equals>
+        <property>sim/weight[6]/selected</property>
+        <value>none</value>
+      </not-equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Station8</object-name>      
+    <condition>
+      <not-equals>
+        <property>sim/weight[7]/selected</property>
+        <value>none</value>
+      </not-equals>
+    </condition>
+  </animation>
+
+ 
+		
+
+</PropertyList>

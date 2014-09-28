@@ -1,5 +1,9 @@
 AC3Db
+<<<<<<< HEAD
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+=======
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+>>>>>>> d3e4be5... F-35B version 0.4.6 update
 OBJECT world
 kids 1
 OBJECT poly

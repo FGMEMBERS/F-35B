@@ -1,7 +1,16 @@
 <PropertyList>
 
+<<<<<<< HEAD
 <path>plume.ac</path>
 
+=======
+<path>Aircraft/F-35B/Models/Effects/Afterburner/Afterburner.xml</path>
+    <x-m> 2.18</x-m>
+     <y-m>0</y-m>
+     <z-m> 0</z-m>
+     <pitch-deg>90</pitch-deg>
+<!--
+>>>>>>> d3e4be5... F-35B version 0.4.6 update
 <animation>
 <type>select</type>
 <object-name>plume</object-name>
@@ -63,5 +72,9 @@
 <min-m>0</min-m>
 <max-m>32000</max-m>
 </animation>
+<<<<<<< HEAD
 
+=======
+-->
+>>>>>>> d3e4be5... F-35B version 0.4.6 update
 </PropertyList>

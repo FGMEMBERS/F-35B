@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	
+	
+	
+	<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>12000</max-m>
+    </animation>
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Payload/doublerack/doublerack.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Payload/agm65/AGM-65.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>-0.43</y-m>
+			<z-m>-0.12</z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/F-35B/Models/Payload/agm65/AGM-65.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0.43</y-m>
+			<z-m>-0.12</z-m>
+		</offsets>
+	</model>
+	
+</PropertyList>
