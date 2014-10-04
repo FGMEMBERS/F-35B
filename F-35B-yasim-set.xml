@@ -3,6 +3,7 @@
 <PropertyList>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  <sim>
 
   <description>Lockheed Martin F-35B Lightning II</description>
@@ -332,6 +333,8 @@
     </f35>
   </nasal>
 =======
+=======
+>>>>>>> 58cd81e... rating
 	<sim>
 
 		<description>Lockheed Martin F-35B Lightning II (YASim)</description>
@@ -341,7 +344,11 @@
 			<FDM type="int">4</FDM>
 			<systems type="int">2</systems>
 			<cockpit type="int">2</cockpit>
+<<<<<<< HEAD
 			<model type="int">3</model>
+=======
+			<model type="int">5</model>
+>>>>>>> 58cd81e... rating
 		</rating>
 
 		<startup>
@@ -1110,6 +1117,9 @@
 			<file>Aircraft/F-35B/Nasal/low.nas</file>
 		</low>
 	</nasal>
+<<<<<<< HEAD
 >>>>>>> d3e4be5... F-35B version 0.4.6 update
+=======
+>>>>>>> 58cd81e... rating
 
 </PropertyList>
