@@ -5,9 +5,9 @@
 <sim>
 	<model>
 		<livery>
-			<name type="string">Fantasy VX9 "Vampires"</name>
+			<name type="string">VX-9</name>
 			<pylons type="bool">false</pylons>
-			<texture>liveries/VX9.png</texture>
+			<texture>Liveries/VX-9.png</texture>
 		</livery>
 	</model>
 </sim>

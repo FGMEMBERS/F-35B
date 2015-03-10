@@ -7,7 +7,7 @@
 		<livery>
 			<name type="string">BF-01</name>
 			<pylons type="bool">false</pylons>
-			<texture>liveries/BF01.png</texture>
+			<texture>Liveries/BF01.png</texture>
 		</livery>
 	</model>
 </sim>

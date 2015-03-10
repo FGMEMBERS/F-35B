@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
 <PropertyList>
+	
   <path>terrain-map-pixel.ac</path>
 
   <animation n="1">
@@ -277,15 +278,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.031</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[0]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="32">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.032</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[0]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -570,15 +562,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="64">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.064</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[1]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="65">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.065</object-name>
@@ -853,15 +836,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.095</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[2]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="96">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.096</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[2]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -1146,15 +1120,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="128">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.128</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[3]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="129">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.129</object-name>
@@ -1429,15 +1394,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.159</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[4]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="160">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.160</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[4]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -1722,15 +1678,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="192">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.192</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="193">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.193</object-name>
@@ -2005,15 +1952,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.223</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[6]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="224">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.224</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[6]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -2298,15 +2236,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="256">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.256</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[7]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="257">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.257</object-name>
@@ -2581,15 +2510,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.287</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[8]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="288">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.288</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[8]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -2874,15 +2794,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="320">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.320</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[9]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="321">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.321</object-name>
@@ -3157,15 +3068,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.351</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[10]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="352">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.352</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[10]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -3450,15 +3352,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="384">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.384</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[11]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="385">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.385</object-name>
@@ -3733,15 +3626,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.415</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[12]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="416">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.416</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[12]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -4026,15 +3910,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="448">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.448</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[13]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="449">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.449</object-name>
@@ -4309,15 +4184,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.479</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[14]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="480">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.480</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[14]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -4602,15 +4468,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="512">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.512</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[15]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="513">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.513</object-name>
@@ -4885,15 +4742,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.543</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[16]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="544">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.544</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[16]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -5178,15 +5026,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="576">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.576</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[17]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="577">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.577</object-name>
@@ -5461,15 +5300,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.607</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[18]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="608">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.608</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[18]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -5754,15 +5584,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="640">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.640</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[19]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="641">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.641</object-name>
@@ -6037,15 +5858,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.671</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[20]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="672">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.672</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[20]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -6330,15 +6142,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="704">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.704</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[21]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="705">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.705</object-name>
@@ -6613,15 +6416,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.735</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[22]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="736">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.736</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[22]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -6906,15 +6700,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="768">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.768</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[23]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="769">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.769</object-name>
@@ -7189,15 +6974,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.799</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[24]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="800">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.800</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[24]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -7482,15 +7258,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="832">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.832</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[25]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="833">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.833</object-name>
@@ -7765,15 +7532,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.863</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[26]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="864">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.864</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[26]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -8058,15 +7816,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="896">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.896</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[27]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="897">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.897</object-name>
@@ -8341,15 +8090,6 @@
     <type type="string">textranslate</type>
     <object-name type="string">Plane.927</object-name>
     <property type="string">/instrumentation/terrain-map/pixels/row[28]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="928">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.928</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[28]/col[32]/elevation-ft</property>
     <factor type="double">5.5556e-05</factor>
     <axis>
       <x type="double">1</x>
@@ -8634,15 +8374,6 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="960">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.960</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[29]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
   <animation n="961">
     <type type="string">textranslate</type>
     <object-name type="string">Plane.961</object-name>
@@ -8922,322 +8653,5 @@
       <x type="double">1</x>
     </axis>
   </animation>
-  <animation n="992">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.992</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[30]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="993">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.993</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[1]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="994">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.994</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[2]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="995">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.995</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[3]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="996">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.996</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[4]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="997">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.997</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[5]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="998">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.998</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[6]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="999">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.999</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[7]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1000">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1000</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[8]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1001">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1001</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[9]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1002">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1002</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[10]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1003">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1003</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[11]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1004">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1004</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[12]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1005">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1005</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[13]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1006">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1006</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[14]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1007">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1007</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[15]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1008">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1008</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[16]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1009">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1009</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[17]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1010">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1010</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[18]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1011">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1011</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[19]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1012">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1012</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[20]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1013">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1013</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[21]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1014">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1014</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[22]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1015">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1015</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[23]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1016">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1016</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[24]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1017">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1017</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[25]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1018">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1018</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[26]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1019">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1019</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[27]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1020">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1020</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[28]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1021">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1021</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[29]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1022">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1022</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[30]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1023">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1023</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[31]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-  <animation n="1024">
-    <type type="string">textranslate</type>
-    <object-name type="string">Plane.1024</object-name>
-    <property type="string">/instrumentation/terrain-map/pixels/row[31]/col[32]/elevation-ft</property>
-    <factor type="double">5.5556e-05</factor>
-    <axis>
-      <x type="double">1</x>
-    </axis>
-  </animation>
-
-<!-- adjust altitude on ARC mode 
-	<animation>
-		<type>translate</type>
-		<object-name>Plane</object-name>
-		<condition>
-			<equals>
-				<property>instrumentation/efis[0]/nd/display-mode</property>
-				<value>ARC</value>
-			</equals>
-		</condition>
-		<property>instrumentation/efis[0]/nd/display-mode-knob</property>--> <!-- always 4
-		<factor>-0.01</factor>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation> -->
-
 
 </PropertyList>

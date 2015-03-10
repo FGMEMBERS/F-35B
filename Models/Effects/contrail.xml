@@ -19,17 +19,12 @@
 
     <condition><greater-than>
       <property>position/altitude-ft</property>
-<<<<<<< HEAD
-      <value>30000</value>
-      </greater-than>
-=======
       <value>24000</value>
       </greater-than>
 	  <greater-than>
      <property>velocities/airspeed-kt</property>
      <value>100</value>
 	 </greater-than>
->>>>>>> d3e4be5... F-35B version 0.4.6 update
     </condition>
 
     <emissive>false</emissive>

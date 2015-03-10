@@ -6,7 +6,7 @@
 
 		<description>Lockheed Martin F-35B Lightning II (JSBSim)</description>
 		<author>Petar Jedvaj, Detlef Faber, F-GTUX, Stuart Cassie and Gary Brown</author>
-		<status>0.4.6</status>
+		<status>0.4.9</status>
 		<rating>
 			<FDM type="int">1</FDM>
 			<systems type="int">2</systems>
@@ -486,7 +486,6 @@
 		</warnings>
   
 		<efis>
-
 			<ecam>
 				<display-mode type="string">FUEL</display-mode>
 			</ecam>
@@ -494,7 +493,6 @@
 				<display-mode type="string">VOR</display-mode>
 				<display-mode-knob type="int">2</display-mode-knob>
 				<display-range type="int">40</display-range>
-				
 			</nd>
 			<input>
 				<vor-adf-1 type="int">1</vor-adf-1>
@@ -509,9 +507,8 @@
 				<TRAF type="bool">1</TRAF>
 				<taxi type="bool">1</taxi>
 			</input>
-
-		
 		</efis>
+
 	</instrumentation>
 
 	<!-- set up control properties for YASim -->
@@ -663,6 +660,10 @@
 			<file>Aircraft/F-35B/Nasal/liveries.nas</file>
 			<file>Aircraft/F-35B/Nasal/hud.nas</file>
 		</f35>
+		
+		<lights>
+			<file>Aircraft/F-35B/Nasal/Lights.nas</file>
+		</lights>
 		
 		<baydoors>
 			<file>Aircraft/F-35B/Nasal/baydoors.nas</file>
