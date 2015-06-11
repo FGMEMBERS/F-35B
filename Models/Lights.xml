@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- Lights -->
+
+	<model>
+		<name>greenlight</name>
+		<path>Aircraft/F-35B/Models/Lights/GreenLight.xml</path>
+		<name>Greenlight</name>
+		<offsets>
+			<x-m> 2.87 </x-m>
+			<y-m> 5.52</y-m>
+			<z-m> 0.53</z-m>
+		</offsets>
+	</model>
+
+	<model>
+		<name>GreenLight2</name>
+		<path>Aircraft/F-35B/Models/Effects/lightsR/NavLightR.xml</path>
+		<offsets>
+			<x-m> 2.87 </x-m>
+			<y-m> 5.52</y-m>
+			<z-m> 0.53</z-m>
+		</offsets>
+	</model>
+
+	<model>
+		<name>redlight</name>
+		<path>Aircraft/F-35B/Models/Lights/RedLight.xml</path>
+		<name>Redlight</name>
+		<offsets>
+			<x-m> 2.87</x-m>
+			<y-m>-5.52</y-m>
+			<z-m> 0.53</z-m>
+		</offsets>
+	</model>
+
+	<model>
+		<name>RedLight2</name>
+		<path>Aircraft/F-35B/Models/Effects/lightsR/NavLightL.xml</path>
+		<offsets>
+			<x-m> 2.87</x-m>
+			<y-m>-5.52</y-m>
+			<z-m> 0.53</z-m>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/F-35B/Models/lights/landinglight.xml</path>
+		<name>NoseGearLandinglight</name>
+		<condition>
+			<equals>
+				<property>gear/gear[0]/position-norm</property>
+				<value type="bool">true</value>
+			</equals>
+		</condition>
+		<offsets>
+			<x-m>-4 </x-m>
+			<y-m>0</y-m>
+			<z-m>-0.8</z-m>
+			<pitch-deg>-5.15</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<name>Taxi-Light-Left</name>
+		<path>Aircraft/F-35B/Models/lights/light-cone.xml</path>
+		<offsets>
+			<x-m>-4.3 </x-m>
+			<y-m>0</y-m>
+			<z-m>-0.8</z-m>
+			<pitch-deg>-5.15</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<name>Taxi-Light-LeftR</name>
+		<path>Aircraft/F-35B/Models/Effects/lightsR/LandingLight.xml</path>
+		<offsets>
+			<x-m>-5.5</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.6</z-m>
+			<pitch-deg> -9.13</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+
+	<animation>
+		<type>select</type>
+		<object-name>Taxi-Light-Left</object-name>
+		<object-name>Taxi-Light-LeftR</object-name>
+		<object-name>LandingLights</object-name>
+		<condition>
+			<equals>
+				<property>gear/gear[0]/position-norm</property>
+				<value> 1 </value>
+			</equals>
+		</condition>
+	</animation>
+	
+</PropertyList>
