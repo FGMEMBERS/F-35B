@@ -4,6 +4,8 @@
 
 	<sim>
 
+
+		<variant-of>F-35B-yasim</variant-of>
 		<description>Lockheed Martin F-35B Lightning II (JSBSim)</description>
 		<author>Petar Jedvaj, Detlef Faber, F-GTUX, Stuart Cassie and Gary Brown</author>
 		<status>0.4.6</status>
@@ -17,7 +19,7 @@
 		<startup>
 			<splash-texture>Aircraft/F-35B/Splash.png</splash-texture>
 		</startup>
-  
+
 		<flight-model>jsb</flight-model>
 		<aero>F-35B-jsbsim</aero>
 		<fuel-fraction>1.0</fuel-fraction>
@@ -29,8 +31,8 @@
 			<autopilot>
 				<path>Aircraft/F-35B/Systems/autopilot.xml</path>
 			</autopilot>
-		</systems> 
- 
+		</systems>
+
 		<virtual-cockpit archive="y">true</virtual-cockpit>
 		<allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
@@ -38,7 +40,7 @@
 			<path>Aircraft/F-35B/Models/F-35B.xml</path>
 		</model>
 
-		<submodels> 
+		<submodels>
 			<serviceable type="bool">true</serviceable>
 			<path>Aircraft/F-35B/Submodels.xml</path>
 			<path>Aircraft/F-35B/Models/Payload/loads.xml</path>
@@ -107,8 +109,8 @@
 
 		<hud>
 			<enable3d>false</enable3d>
-		</hud>  
-  
+		</hud>
+
 		<!-- Payloads -->
 
 		<weight n="0">
@@ -124,7 +126,7 @@
 				<lbs>188</lbs>
 			</opt>
 		</weight>
-		
+
 		<weight n="1">
 			<name>Station2 </name>
 			<weight-lb type="float">0</weight-lb>
@@ -142,7 +144,7 @@
 				<lbs>1000</lbs>
 			</opt>
 		</weight>
-		
+
 		<weight n="2">
 			<name>Station3 </name>
 			<tank>9</tank>
@@ -170,7 +172,7 @@
 				<lbs>2000</lbs>
 			</opt>
 		</weight>
-		
+
 		<weight n="3">
 			<name>LeftInternalBay</name>
 			<weight-lb type="float">0</weight-lb>
@@ -200,7 +202,7 @@
 				<lbs>1188</lbs>
 			</opt>
 		</weight>
-		
+
 		<weight n="4">
 			<name>RightInternalBay</name>
 			<weight-lb type="float">0</weight-lb>
@@ -230,7 +232,7 @@
 				<lbs>1188</lbs>
 			</opt>
 		</weight>
-		
+
 		<weight n="5">
 			<name>Station6 </name>
 			<tank>10</tank>
@@ -258,8 +260,8 @@
 				<lbs>2000</lbs>
 			</opt>
 		</weight>
-		
-		
+
+
 		<weight n="6">
 			<name>Station7 </name>
 			<weight-lb type="float">0</weight-lb>
@@ -277,7 +279,7 @@
 				<lbs>1000</lbs>
 			</opt>
 		</weight>
-		
+
 		<weight n="7">
 			<name>Station8 </name>
 			<weight-lb type="float">0</weight-lb>
@@ -316,7 +318,7 @@
 			</key>
 			<line>SVTOL</line>
 		</help>
-	
+
 		<menubar>
 			<default>
 				<menu n="100">
@@ -334,8 +336,8 @@
 		</menubar>
 
 	</sim>
- 
- 
+
+
 	<systems>
 		<electrical>
 			<path>Aircraft/Generic/generic-electrical.xml</path>
@@ -348,7 +350,7 @@
 			<serviceable type="bool">true</serviceable>
 		</refuel>
 	</systems>
-  
+
 	<environment>
 		<turbulence>
 			<use-cloud-turbulence>true</use-cloud-turbulence>
@@ -385,8 +387,8 @@
 			<led-brightness type="double">0.75</led-brightness>
 			<master-brightness type="double">0.74</master-brightness>
 		</illumination>
-  
-  
+
+
 		<rwr>
 			<display-lighting-intens type="double">0.4</display-lighting-intens>
 			<symbology-lighting-intens type="double">1</symbology-lighting-intens>
@@ -412,7 +414,7 @@
 				<tws-auto type="bool">false</tws-auto>
 			</mode>
 
-		</radar> 
+		</radar>
 
 
 		<radar2>
@@ -436,8 +438,8 @@
 			<jat-light type="bool">false</jat-light>
 			<irot-light type="bool">false</irot-light>
 		</radar-awg-9>
-	
-		<!--	
+
+		<!--
 			<transponder>
 				<standby type="bool">false</standby>
 				<interrogator-standby type="bool">false</interrogator-standby>
@@ -457,7 +459,7 @@
 						<respond type="bool">true</respond>
 						<pressure-altitude type="int">0</pressure-altitude>
 					</mode-C>
-				</modes> 
+				</modes>
 			</transponder>
 		-->
 		<!--en pruebas fin -->
@@ -476,15 +478,15 @@
 			<attention-lights type="bool">false</attention-lights>
 			<signals>
 				<cat-1-warning type="bool">false</cat-1-warning>
-				<cat-2-warning type="bool">false</cat-2-warning> 
-				<cat-3-warning type="bool">false</cat-3-warning> 
-				<cat-4-warning type="bool">false</cat-4-warning>   
+				<cat-2-warning type="bool">false</cat-2-warning>
+				<cat-3-warning type="bool">false</cat-3-warning>
+				<cat-4-warning type="bool">false</cat-4-warning>
 			</signals>
 			<flags>
 				<gear-limit type="bool">true</gear-limit>
 			</flags>
 		</warnings>
-  
+
 		<efis>
 
 			<ecam>
@@ -494,7 +496,7 @@
 				<display-mode type="string">VOR</display-mode>
 				<display-mode-knob type="int">2</display-mode-knob>
 				<display-range type="int">40</display-range>
-				
+
 			</nd>
 			<input>
 				<vor-adf-1 type="int">1</vor-adf-1>
@@ -510,7 +512,7 @@
 				<taxi type="bool">1</taxi>
 			</input>
 
-		
+
 		</efis>
 	</instrumentation>
 
@@ -550,9 +552,9 @@
 			</station>
 			<station n="7">
 				<release type="bool">false</release>
-			</station>			
-			
-		</armament>	
+			</station>
+
+		</armament>
 	</controls>
 
 	<canopy>
@@ -570,11 +572,11 @@
 					<script>f35.canopy_switch(2)</script>
 				</binding>
 			</key>
-			
-			<key n="78"> 
+
+			<key n="78">
 				<name>N</name>
 				<desc>Extend Speedbrakes</desc>
-				<binding> 
+				<binding>
 					<command>property-adjust</command>
 					<property>/controls/flight/speedbrake</property>
 					<step type="double">0.2</step>
@@ -582,11 +584,11 @@
 					<max type="double">1</max>
 				</binding>
 			</key>
-			
-			<key n="110"> 
+
+			<key n="110">
 				<name>n</name>
 				<desc>Retract Speedbrakes</desc>
-				<binding> 
+				<binding>
 					<command>property-adjust</command>
 					<property>/controls/flight/speedbrake</property>
 					<step type="double">-0.2</step>
@@ -597,7 +599,7 @@
 
 			<key n="101">
 				<name>e</name>
-				<desc>Gun</desc> 
+				<desc>Gun</desc>
 				<binding>
 					<command>property-assign</command>
 					<property>controls/armament/trigger</property>
@@ -608,7 +610,7 @@
 						<command>property-assign</command>
 						<property>controls/armament/trigger</property>
 						<value>false</value>
-					</binding> 
+					</binding>
 				</mod-up>
 			</key>
 
@@ -663,39 +665,39 @@
 			<file>Aircraft/F-35B/Nasal/liveries.nas</file>
 			<file>Aircraft/F-35B/Nasal/hud.nas</file>
 		</f35>
-		
+
 		<baydoors>
 			<file>Aircraft/F-35B/Nasal/baydoors.nas</file>
 		</baydoors>
-		
-		<aar> 
+
+		<aar>
 			<file>Aircraft/Generic/aar.nas</file>
 		</aar>
-		
+
 		<rwr>
 			<file>Aircraft/F-35B/Models/Instruments/bigscreen/radar/rwr.nas</file>
 		</rwr>
-		
+
 		<radardist>
 			<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
 		</radardist>
-		
+
 		<enav>
 			<file>Aircraft/F-35B/Nasal/enav.nas</file>
 		</enav>
-		
+
 		<radar>
-			<file>Aircraft/F-35B/Models/Instruments/bigscreen/radar/radar.nas</file> 
+			<file>Aircraft/F-35B/Models/Instruments/bigscreen/radar/radar.nas</file>
 		</radar>
-		
+
 		<radar2>
 			<file>Aircraft/F-35B/Models/Instruments/bigscreen/radar/radar2.nas</file>
 		</radar2>
- 
+
 		<terrain-map>
 			<file>Aircraft/F-35B/Nasal/terrain-map.nas</file>
 		</terrain-map>
-		
+
 		<low>
 			<file>Aircraft/F-35B/Nasal/low.nas</file>
 		</low>
