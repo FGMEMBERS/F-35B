@@ -38,6 +38,10 @@
 
 		<model>
 			<path>Aircraft/F-35B/Models/F-35B.xml</path>
+            <pushback>
+                <target-speed-fps>0</target-speed-fps>
+                <position-norm>0</position-norm>
+            </pushback>
 		</model>
 
 		<submodels>
