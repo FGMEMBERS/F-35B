@@ -5,19 +5,10 @@
 <sim>
 	<model>
 		<livery>
-<<<<<<< HEAD
-			<name type="string">USMC</name>
-			<texture>Liveries/Default.png</texture>
-		</livery>
-		<livery-logo>
-			<texture>Liveries/Default.png</texture>
-		</livery-logo>
-=======
 			<name type="string">AF-01</name>
 			<pylons type="bool">false</pylons>
 			<texture>liveries/Default.png</texture>
 		</livery>
->>>>>>> d3e4be5... F-35B version 0.4.6 update
 	</model>
 </sim>
 

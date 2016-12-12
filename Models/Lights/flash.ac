@@ -1,10 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-<<<<<<< HEAD
-MATERIAL "lit" rgb 1 0.97912 0.97912 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 49 trans 0
-=======
 MATERIAL "lit" rgb 1 0.97912 0.97912 amb 1 0.97912 0.97912 emis 1 1 1 spec 0 0 0 shi 49 trans 0
->>>>>>> d3e4be5... F-35B version 0.4.6 update
 OBJECT world
 kids 1
 OBJECT poly
