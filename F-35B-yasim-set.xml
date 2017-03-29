@@ -14,6 +14,22 @@
 			<model type="int">5</model>
 		</rating>
 
+		<tags>
+			<tag>fighter</tag>
+			<tag>lockheed</tag>
+			<tag>fighter</tag>
+			<tag>2000s</tag>
+			<tag>glass-cockpit</tag>
+			<tag>hud</tag>
+			<tag>ifr</tag>
+			<tag>retractable-gear</tag>
+			<tag>stol</tag>
+			<tag>supersonic</tag>
+			<tag>afterburner</tag>
+			<tag>jet</tag>
+			<tag>single-engine</tag>
+		</tags>
+
 		<startup>
 			<splash-texture>Aircraft/F-35B/Splash.png</splash-texture>
 		</startup>
