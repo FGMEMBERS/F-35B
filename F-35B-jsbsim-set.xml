@@ -57,6 +57,9 @@
             <pushback>
                 <target-speed-fps>0</target-speed-fps>
                 <position-norm>0</position-norm>
+                <kp type="double">100</kp>
+                <ki type="double">25</ki>
+                <kd type="double">0</kd>
             </pushback>
 		</model>
 
