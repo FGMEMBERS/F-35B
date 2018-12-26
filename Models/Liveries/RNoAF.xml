@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+	<model>
+		<livery>
+			<name type="string">Royal Norwegian Air Force</name>
+			<pylons type="bool">false</pylons>
+			<texture>Liveries/RNoAF.png</texture>
+		</livery>
+	</model>
+</sim>
+
+</PropertyList>

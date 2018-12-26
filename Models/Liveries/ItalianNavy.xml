@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+	<model>
+		<livery>
+			<name type="string">Italian Navy</name>
+			<pylons type="bool">false</pylons>
+			<texture>Liveries/ItalianNavy.png</texture>
+		</livery>
+	</model>
+</sim>
+
+</PropertyList>

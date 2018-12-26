@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+	<model>
+		<livery>
+			<name type="string">RNLAF 323 Sqn</name>
+			<pylons type="bool">false</pylons>
+			<texture>Liveries/RNLAF323S.png</texture>
+		</livery>
+	</model>
+</sim>
+
+</PropertyList>

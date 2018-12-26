@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+	<model>
+		<livery>
+			<name type="string">USNC VMFAT 501</name>
+			<pylons type="bool">false</pylons>
+			<texture>Liveries/VMFAT501.png</texture>
+		</livery>
+	</model>
+</sim>
+
+</PropertyList>
